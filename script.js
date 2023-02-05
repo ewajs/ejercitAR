@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.subpage.list button').forEach(btn => {
         btn.addEventListener('click', () => {
             modelViewer.src = btn.dataset.modelSrc;
+            if (btn.dataset.hotspots === "true") modelViewer.classList.remove('no-hotspots');
+            else modelViewer.classList.add('no-hotspots');
             list.classList.remove('open');
             model.classList.add('open');
         });

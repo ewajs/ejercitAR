@@ -106,7 +106,12 @@ model-viewer {
 .subpage.model > model-viewer {
     height: calc(100% - 80px);
     width: 100%;
-} 
+}
+
+.subpage.model > model-viewer.no-hotspots > button {
+    display: none;
+}
+
 /* model-viewer #ar-button {
     position: fixed;
     bottom: 50px;

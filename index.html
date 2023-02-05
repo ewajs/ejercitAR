@@ -19,16 +19,16 @@
             <h1>Camilo Yanes</h1>
         </nav>
         <div class="excercise-container">
-            <button data-model-src="./models/gym_trainer.glb">
+            <button data-model-src="./models/male_base_model.glb" data-hotspots="true">
+                Músculos (hotspots)
+            </button>
+            <button data-model-src="./models/gym_trainer.glb" data-hotspots="false">
                 Press Banca (fijo)
             </button>
-            <button data-model-src="./models/male_base_model.glb">
-                Press Militar (hotspots)
-            </button>
-            <button data-model-src="./models/phoenix_bird.glb">
+            <button data-model-src="./models/phoenix_bird.glb" data-hotspots="false">
                 Rolo (animado)
             </button>
-            <button data-model-src="./models/saturn.glb">
+            <button data-model-src="./models/saturn.glb" data-hotspots="false">
                 Vuelos Laterales (yapa astronómica)
             </button>
         </div>
@@ -45,7 +45,50 @@
         ar-modes="scene-viewer quick-look" 
         shadow-intensity="1" 
         camera-controls>
+            <button class="Hotspot" slot="hotspot-1" data-surface="0 0 39576 39577 39578 0.035 0.469 0.496" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Muñeca</div>
+            </button>
+            <button class="Hotspot" slot="hotspot-2" data-surface="0 0 32186 32187 32188 0.503 0.431 0.066" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Triceps</div>
+            </button>
+            <button class="Hotspot" slot="hotspot-4" data-surface="0 0 17106 17109 17107 0.296 0.260 0.444" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Biceps</div>
+            </button>
+            <button class="Hotspot" slot="hotspot-5" data-surface="0 0 11957 11960 11961 0.236 0.561 0.203" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Cuádriceps</div>
+            </button>
+            <button class="Hotspot" slot="hotspot-6" data-surface="0 0 28014 28013 28018 0.591 0.364 0.045" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Gemelos</div>
+            </button>
+            <button class="Hotspot" slot="hotspot-7" data-surface="0 0 4155 4156 4157 0.215 0.180 0.605" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Trapecio</div>
+            </button>
         </model-viewer>
+        <!-- <model-viewer src="male_base_model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1">
+            <button class="Hotspot" slot="hotspot-1" data-surface="0 0 39576 39577 39578 0.035 0.469 0.496" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Muñeca</div>
+            </button><button class="Hotspot" slot="hotspot-2" data-surface="0 0 32186 32187 32188 0.503 0.431 0.066" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Triceps</div>
+            </button><button class="Hotspot" slot="hotspot-4" data-surface="0 0 17106 17109 17107 0.296 0.260 0.444" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Biceps</div>
+            </button><button class="Hotspot" slot="hotspot-5" data-surface="0 0 11957 11960 11961 0.236 0.561 0.203" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Cuádriceps</div>
+            </button><button class="Hotspot" slot="hotspot-6" data-surface="0 0 28014 28013 28018 0.591 0.364 0.045" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Gemelos</div>
+            </button><button class="Hotspot" slot="hotspot-7" data-surface="0 0 4155 4156 4157 0.215 0.180 0.605" data-visibility-attribute="visible">
+                <div class="HotspotAnnotation">Trapecio</div>
+            </button>
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+            </div>
+        </model-viewer> -->
+        
     </div>
 </body>
 </html>
