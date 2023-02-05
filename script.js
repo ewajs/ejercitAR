@@ -5,17 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const modelViewerNoHotspots = document.querySelector('model-viewer[data-hotspots="false"]');
     const modelViewerHotspots = document.querySelector('model-viewer[data-hotspots="true"]');
     const backButton = document.getElementById('back');
-
+    
+    // Splash screen intro
     setTimeout(() => {
         splash.classList.remove('open');
         list.classList.add('open');
     }, 2000);
 
+    // Back button
     backButton.addEventListener('click', () => {
         model.classList.remove('open');
         list.classList.add('open');
     });
 
+    // Model selection
     document.querySelectorAll('.subpage.list button').forEach(btn => {
         btn.addEventListener('click', () => {
             if (btn.dataset.hotspots === "true") {
@@ -32,4 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Hotspot listeners
+    const hotspotClicked = (hotspot) => {
+        const hotspotData = modelViewerHotspots.queryHotspot(hotspot.slot);
+        console.log(hotspotData);
+        modelViewerHotspots.cameraTarget = `${hotspotData.position.x}m ${hotspotData.position.y}m ${hotspotData.position.z}m`;
+      }
+    
+    modelViewerHotspots.querySelectorAll('button.Hotspot').forEach((hotspot) => {
+        console.log("Configuring hotspot: ", hotspot);
+        hotspot.addEventListener('click', () => hotspotClicked(hotspot));
+    });
 });

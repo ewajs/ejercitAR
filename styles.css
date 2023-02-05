@@ -1,12 +1,3 @@
-model-viewer {
-    height: 100%;
-    width: 100%;
-}
-
-model-viewer.hide {
-    display: none;
-}
-
 .subpage {
     position: fixed;
     width: 100vw;
@@ -112,20 +103,28 @@ model-viewer.hide {
     width: 100%;
 }
 
-.subpage.model > model-viewer.no-hotspots > button {
+.subpage.model > model-viewer.hide {
     display: none;
 }
 
-/* model-viewer #ar-button {
-    position: fixed;
-    bottom: 50px;
-    background-color: black;
-    color: white;
+.subpage.model > model-viewer > button {
+    border: 1px solid gray;
+    padding: 5px;
+    background-color: white;
+    border-radius: 8px;
     font-size: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 3px;
+}
+
+.subpage.model > model-viewer > #ar-button {
+    background-color: #04ac9c;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
     border: none;
-} */
+}
