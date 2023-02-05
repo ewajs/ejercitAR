@@ -6,37 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camilo Yanes Realidad Aumentada</title>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <style>
-        model-viewer {
-            height: 85vh;
-            width: 100vw;
-        }
-
-        /* model-viewer #ar-button {
-            position: fixed;
-            bottom: 50px;
-            background-color: black;
-            color: white;
-            font-size: 16px;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 10px;
-            margin: 0 auto;
-            border-radius: 3px;
-            border: none;
-        } */
-    </style>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Use it like any other HTML element -->
-    <model-viewer 
+    <div class="subpage open splash">
+        <div class="logo-container">
+        </div>
+    </div>
+    <div class="subpage list">
+        <nav>
+            <h1>Camilo Yanes</h1>
+        </nav>
+        <div class="excercise-container">
+            <button id="press" data-model-src="./models/gym_trainer.glb">
+                Press Banca
+            </button>
+            <button id="lateral" data-model-src="./models/saturn.glb">
+                Vuelos Laterales
+            </button>
+            <button id="bulgara" data-model-src="./models/solar_system.glb">
+                Sentadilla Búlgara
+            </button>
+        </div>
+    </div>
+    <div class="subpage model">
+        <nav>
+            <button id="back">←</button>
+        </nav>
+        <!-- Use it like any other HTML element -->
+        <model-viewer
+        id="viewer"
         alt="Una máquina para hacer deporte" 
         src="./models/gym_trainer.glb" 
         ar 
-        ar-modes="webxr scene-viewer quick-look" 
+        ar-modes="scene-viewer quick-look" 
         shadow-intensity="1" 
         camera-controls>
-    </model-viewer>
-    
+        </model-viewer>
+    </div>
 </body>
 </html>

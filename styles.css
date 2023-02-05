@@ -1,0 +1,116 @@
+model-viewer {
+    height: 100%;
+    width: 100%;
+}
+
+.subpage {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: -100vw; 
+    transition: left 1s ease;
+    
+}
+.subpage.open {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+}
+
+.subpage.splash {
+    background-color: #04ac9c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subpage.splash > div.logo-container {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    background-image: url(./img/camilogo.png);
+    background-size: cover;
+}
+
+.subpage.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.subpage.list > nav {
+    height: 80px;
+    width: 100%;
+    background-color: #04ac9c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subpage.list > .excercise-container {
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subpage.list > .excercise-container > button {
+    background-color: #04ac9c;
+    color: white;
+    font-weight: 700;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.subpage.model {
+    display: flex;
+    flex-direction: column;
+}
+
+.subpage.model > nav {
+    height: 80px;
+    width: 100%;
+    background-color: #04ac9c;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.subpage.model > nav > button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.subpage.model > model-viewer {
+    height: calc(100% - 80px);
+    width: 100%;
+} 
+/* model-viewer #ar-button {
+    position: fixed;
+    bottom: 50px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 3px;
+    border: none;
+} */
