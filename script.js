@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.querySelectorAll('.subpage.list button').forEach(btn => {
-        console.log({btn});
         btn.addEventListener('click', () => {
             modelViewer.src = btn.dataset.modelSrc;
             list.classList.remove('open');
