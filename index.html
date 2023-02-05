@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camilo Yanes Realidad Aumentada</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        model-viewer {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* model-viewer #ar-button {
+            position: fixed;
+            bottom: 50px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 3px;
+            border: none;
+        } */
+    </style>
+</head>
+<body>
+    <!-- Use it like any other HTML element -->
+    <model-viewer 
+        alt="Una máquina para hacer deporte" 
+        src="./models/gym_trainer.glb" 
+        ar 
+        ar-modes="webxr scene-viewer quick-look" 
+        shadow-intensity="1" 
+        camera-controls 
+        touch-action="pan-y">
+    </model-viewer>
+    
+</body>
+</html>
