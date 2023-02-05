@@ -8,16 +8,7 @@ model-viewer {
     width: 100vw;
     top: 0;
     bottom: 0;
-    left: -100vw; 
-    transition: left 1s ease;
-    
-}
-.subpage.open {
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    bottom: 0;
-    left: 0; 
+    transition: left 1s ease, right 1s ease;
 }
 
 .subpage.splash {
@@ -25,6 +16,11 @@ model-viewer {
     display: flex;
     justify-content: center;
     align-items: center;
+    left: -100vw; 
+}
+
+.subpage.splash.open {
+    left: 0;
 }
 
 .subpage.splash > div.logo-container {
@@ -39,6 +35,11 @@ model-viewer {
 .subpage.list {
     display: flex;
     flex-direction: column;
+    right: -100vw;
+}
+
+.subpage.list.open {
+    right: 0;
 }
 
 .subpage.list > nav {
@@ -76,6 +77,11 @@ model-viewer {
 .subpage.model {
     display: flex;
     flex-direction: column;
+    left: -100vw;
+}
+
+.subpage.model.open {
+    left: 0;
 }
 
 .subpage.model > nav {

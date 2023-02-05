@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
         splash.classList.remove('open');
-        setTimeout(() => list.classList.add('open'), 1000);
+        list.classList.add('open');
     }, 2000);
 
     backButton.addEventListener('click', () => {
         model.classList.remove('open');
-        setTimeout(() => list.classList.add('open'), 1000);
+        list.classList.add('open');
     });
 
     document.querySelectorAll('.subpage.list button').forEach(btn => {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => {
             modelViewer.src = btn.dataset.modelSrc;
             list.classList.remove('open');
-            setTimeout(() => model.classList.add('open'), 1000);
+            model.classList.add('open');
         });
     });
 
