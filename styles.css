@@ -3,6 +3,10 @@ model-viewer {
     width: 100%;
 }
 
+model-viewer.hide {
+    display: none;
+}
+
 .subpage {
     position: fixed;
     width: 100vw;
