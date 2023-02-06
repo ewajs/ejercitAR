@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camilo Yanes Realidad Aumentada</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script src="./script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
 </head>
 <body>
     <div class="subpage open splash">
@@ -19,23 +24,34 @@
             <h1>Camilo Yanes</h1>
         </nav>
         <div class="excercise-container">
-            <button data-model-src="./models/male_base_model.glb" data-hotspots="true">
-                Músculos (hotspots)
+            <h1>Información</h1>
+            <button class="item" data-model-src="./models/male_base_model.glb" data-hotspots="true">
+                <span class="material-symbols-outlined">accessibility</span>
+                <span>Músculos (hotspots)</span>
             </button>
-            <button data-model-src="./models/gym_trainer.glb" data-hotspots="false">
-                Press Banca (fijo)
+            <h1>Ejercicios</h1>
+            <button class="item"  data-model-src="./models/gym_trainer.glb" data-hotspots="false">
+                <span class="material-symbols-outlined">exercise</span>
+                <span>Press Banca (fijo)</span>
             </button>
-            <button data-model-src="./models/phoenix_bird.glb" data-hotspots="false">
-                Rolo (animado)
+            <button class="item"  data-model-src="./models/phoenix_bird.glb" data-hotspots="false">
+                <span class="material-symbols-outlined">exercise</span>
+                <span>Rolo (animado)</span>
             </button>
-            <button data-model-src="./models/saturn.glb" data-hotspots="false">
-                Vuelos Laterales (yapa astronómica)
+            <button class="item"  data-model-src="./models/saturn.glb" data-hotspots="false">
+                <span class="material-symbols-outlined">exercise</span>
+                <span>Vuelos Laterales (yapa)</span>
+            </button>
+            <button  class="help">
+                <span class="material-symbols-outlined">help</span>
+                <span>Ayuda</span>
             </button>
         </div>
     </div>
     <div class="subpage model">
         <nav>
-            <button id="back">←</button>
+            <button id="back"><span class="material-symbols-outlined">arrow_back</span></button>
+            <h1 class="model-title"></h1>
         </nav>
         <model-viewer
         data-hotspots="true"
@@ -49,6 +65,8 @@
                 slot="hotspot-1" 
                 data-surface="0 0 39576 39577 39578 0.035 0.469 0.496" 
                 data-visibility-attribute="visible"
+                data-message="Una muñeca es una figura, generalmente de un bebé, una niña o una mujer hecha de madera, trapo, cartón, plástico, etcétera, que sirve de juguete y entretenimiento."
+                data-title="Muñeca"
                 >
                 <div class="HotspotAnnotation">Muñeca</div>
             </button>
@@ -56,38 +74,54 @@
                 class="Hotspot" 
                 slot="hotspot-2" 
                 data-surface="0 0 32186 32187 32188 0.503 0.431 0.066" 
-                data-visibility-attribute="visible">
+                data-visibility-attribute="visible"
+                data-message="Algunos ejemplos de ejercicios de tríceps son poleas para tríceps o simplemente, con los brazos elevados, practicar una extensión por detrás. Otro ejemplo puede ser una retroversión del codo (como en remo), utilizado también para desarrollar los vientres posteriores del deltoides y del dorsal ancho."
+                data-title="Triceps"
+                >
                 <div class="HotspotAnnotation">Triceps</div>
             </button>
             <button 
                 class="Hotspot" 
                 slot="hotspot-4" 
                 data-surface="0 0 17106 17109 17107 0.296 0.260 0.444" 
-                data-visibility-attribute="visible">
+                data-visibility-attribute="visible"
+                data-message="Si esto fuera un tooltip en un ejercicio, podría dar indicaciones útiles como 'mantener el biceps elongado'."
+                data-title="Biceps"
+                >
                 <div class="HotspotAnnotation">Biceps</div>
             </button>
             <button 
                 class="Hotspot" 
                 slot="hotspot-5" 
                 data-surface="0 0 11957 11960 11961 0.236 0.561 0.203" 
-                data-visibility-attribute="visible">
+                data-visibility-attribute="visible"
+                data-message="Ni idea, pero parece que tiene algo que ver con el número 4."
+                data-title="Cuádriceps"
+                >
                 <div class="HotspotAnnotation">Cuádriceps</div>
             </button>
             <button 
                 class="Hotspot" 
                 slot="hotspot-6" 
                 data-surface="0 0 28014 28013 28018 0.591 0.364 0.045" 
-                data-visibility-attribute="visible">
+                data-visibility-attribute="visible"
+                data-message="Dos personas destinadas a tener siempre conjuntitos deportivos del mismo color."
+                data-title="Gemelos"
+                >
                 <div class="HotspotAnnotation">Gemelos</div>
             </button>
             <button 
                 class="Hotspot" 
                 slot="hotspot-7" 
                 data-surface="0 0 4155 4156 4157 0.215 0.180 0.605" 
-                data-visibility-attribute="visible">
+                data-visibility-attribute="visible"
+                data-message="Un cuadrilátero que tiene solamente un par de lados paralelos."
+                data-title="Trapecio"
+                >
                 <div class="HotspotAnnotation">Trapecio</div>
             </button>
             <button slot="ar-button" class="ar-button">
+                <span class="material-symbols-outlined">view_in_ar</span>
                 Ver en RA
             </button>
         </model-viewer>
@@ -99,6 +133,7 @@
         shadow-intensity="1" 
         camera-controls>
             <button slot="ar-button" class="ar-button">
+                <span class="material-symbols-outlined">view_in_ar</span>
                 Ver en RA
             </button>
         </model-viewer>
