@@ -22,30 +22,11 @@
     <div class="subpage list">
         <nav>
             <h1>Camilo Yanes</h1>
-        </nav>
-        <div class="excercise-container">
-            <h1>Información</h1>
-            <button class="item" data-model-src="./models/male_base_model.glb" data-hotspots="true">
-                <span class="material-symbols-outlined">accessibility</span>
-                <span>Músculos (hotspots)</span>
-            </button>
-            <h1>Ejercicios</h1>
-            <button class="item"  data-model-src="./models/vuelos_laterales.glb" data-hotspots="false">
-                <span class="material-symbols-outlined">exercise</span>
-                <span>Vuelos Lateral</span>
-            </button>
-            <button class="item"  data-model-src="./models/sentadilla.glb" data-hotspots="false">
-                <span class="material-symbols-outlined">exercise</span>
-                <span>Sentadilla</span>
-            </button>
-            <button class="item"  data-model-src="./models/pushup.glb" data-hotspots="false">
-                <span class="material-symbols-outlined">exercise</span>
-                <span>Push Up</span>
-            </button>
             <button  class="help">
                 <span class="material-symbols-outlined">help</span>
-                <span>Ayuda</span>
             </button>
+        </nav>
+        <div class="list-container">
         </div>
     </div>
     <div class="subpage model">
@@ -54,79 +35,6 @@
             <h1 class="model-title"></h1>
         </nav>
         <model-viewer
-        data-hotspots="true"
-        autoplay
-        ar 
-        ar-modes="scene-viewer quick-look" 
-        shadow-intensity="1" 
-        camera-controls>
-            <button 
-                class="Hotspot" 
-                slot="hotspot-1" 
-                data-surface="0 0 39576 39577 39578 0.035 0.469 0.496" 
-                data-visibility-attribute="visible"
-                data-message="Una muñeca es una figura, generalmente de un bebé, una niña o una mujer hecha de madera, trapo, cartón, plástico, etcétera, que sirve de juguete y entretenimiento."
-                data-title="Muñeca"
-                >
-                <div class="HotspotAnnotation">Muñeca</div>
-            </button>
-            <button 
-                class="Hotspot" 
-                slot="hotspot-2" 
-                data-surface="0 0 32186 32187 32188 0.503 0.431 0.066" 
-                data-visibility-attribute="visible"
-                data-message="Algunos ejemplos de ejercicios de tríceps son poleas para tríceps o simplemente, con los brazos elevados, practicar una extensión por detrás. Otro ejemplo puede ser una retroversión del codo (como en remo), utilizado también para desarrollar los vientres posteriores del deltoides y del dorsal ancho."
-                data-title="Triceps"
-                >
-                <div class="HotspotAnnotation">Triceps</div>
-            </button>
-            <button 
-                class="Hotspot" 
-                slot="hotspot-4" 
-                data-surface="0 0 17106 17109 17107 0.296 0.260 0.444" 
-                data-visibility-attribute="visible"
-                data-message="Si esto fuera un tooltip en un ejercicio, podría dar indicaciones útiles como 'mantener el biceps elongado'."
-                data-title="Biceps"
-                >
-                <div class="HotspotAnnotation">Biceps</div>
-            </button>
-            <button 
-                class="Hotspot" 
-                slot="hotspot-5" 
-                data-surface="0 0 11957 11960 11961 0.236 0.561 0.203" 
-                data-visibility-attribute="visible"
-                data-message="Ni idea, pero parece que tiene algo que ver con el número 4."
-                data-title="Cuádriceps"
-                >
-                <div class="HotspotAnnotation">Cuádriceps</div>
-            </button>
-            <button 
-                class="Hotspot" 
-                slot="hotspot-6" 
-                data-surface="0 0 28014 28013 28018 0.591 0.364 0.045" 
-                data-visibility-attribute="visible"
-                data-message="Dos personas destinadas a tener siempre conjuntitos deportivos del mismo color."
-                data-title="Gemelos"
-                >
-                <div class="HotspotAnnotation">Gemelos</div>
-            </button>
-            <button 
-                class="Hotspot" 
-                slot="hotspot-7" 
-                data-surface="0 0 4155 4156 4157 0.215 0.180 0.605" 
-                data-visibility-attribute="visible"
-                data-message="Un cuadrilátero que tiene solamente un par de lados paralelos."
-                data-title="Trapecio"
-                >
-                <div class="HotspotAnnotation">Trapecio</div>
-            </button>
-            <button slot="ar-button" class="ar-button">
-                <span class="material-symbols-outlined">view_in_ar</span>
-                Ver en RA
-            </button>
-        </model-viewer>
-        <model-viewer
-        data-hotspots="false"
         camera-orbit="0deg 90deg 0.5m"
         autoplay
         ar 

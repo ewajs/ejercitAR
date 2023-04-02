@@ -42,50 +42,81 @@
 
 .subpage.list > nav {
     height: 80px;
-    width: 100%;
     background-color: #04ac9c;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+}
+
+.subpage.list > nav > .help {
+    border: none;
+    background-color: transparent;
+    color: white;
+
 }
 
 .subpage.list > nav > h1{
     text-transform: uppercase;
 }
 
-.subpage.list > .excercise-container {
-    height: calc(100% - 80px);
+.subpage.list > .list-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.subpage.list > .list-container > .category {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: flex-start;
+    color: #04ac9c;
+    margin-top: 20px;
 }
 
-.subpage.list > .excercise-container > button {
-    background-color: #04ac9c;
-    color: white;
-    font-weight: 700;
-    font-size: 18px;
-    width: 80%;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
+.subpage.list > .list-container > .category > div {
     display: flex;
-    justify-content: center;
+}
+
+.subpage.list > .list-container > .category > .name {
+    height: 60px;
+    width: 100%;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #b0e8e3;
+}
+
+.subpage.list > .list-container > .category > .name > .material-symbols-outlined {
+   margin: 0 10px;
+   width: 24px;
+}
+
+.subpage.list > .list-container > .category > .exercise {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #d5f5f2;
+}
+
+.subpage.list > .list-container > .category > .exercise > button {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #04ac9c;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-.subpage.list > .excercise-container > button > span {
-    margin: 0 5px;
-}
-
-.subpage.list > .excercise-container > button.help {
-    opacity: 0.6;
-    margin-top: 60px;
+.subpage.list > .list-container > .category > .exercise > button > .material-symbols-outlined {
+    font-size: 35px;
 }
 
 .subpage.model {

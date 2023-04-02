@@ -3,7 +3,8 @@
     {
       "id": 1,
       "name": "Referencia",
-      "excercises": [
+      "icon": "info",
+      "exercises": [
         {
           "id": 16,
           "name": "músculos",
@@ -42,7 +43,8 @@
     {
       "id": 2,
       "name": "Piernas",
-      "excercises": [
+      "icon": "tibia_alt",
+      "exercises": [
         {
           "id": 1,
           "name": "sentadilla barra alta",
@@ -114,7 +116,8 @@
     {
       "id": 3,
       "name": "Caderas",
-      "excercises": [
+      "icon": "airline_seat_legroom_extra",
+      "exercises": [
         {
           "id": 3,
           "name": "peso muerto convencional",
@@ -219,7 +222,8 @@
     {
       "id": 4,
       "name": "Torso",
-      "excercises": [
+      "icon": "fitness_center",
+      "exercises": [
         {
           "id": 6,
           "name": "pectoral",
@@ -291,7 +295,8 @@
     {
       "id": 5,
       "name": "Espalda",
-      "excercises": [
+      "icon": "accessibility",
+      "exercises": [
         {
           "id": 8,
           "name": "dominadas agarre prono",
@@ -396,7 +401,8 @@
     {
       "id": 6,
       "name": "Hombros",
-      "excercises": [
+      "icon": "exercise",
+      "exercises": [
         {
           "id": 11,
           "name": "press militar con barra",
@@ -468,7 +474,8 @@
     {
       "id": 7,
       "name": "Brazos",
-      "excercises": [
+      "icon": "humerus_alt",
+      "exercises": [
         {
           "id": 13,
           "name": "curl de biceps con mancuernas",
@@ -540,7 +547,8 @@
     {
       "id": 8,
       "name": "Gluteos",
-      "excercises": [
+      "icon": "fiber_smart_record",
+      "exercises": [
         {
           "id": 15,
           "name": "hip thrusts",
