@@ -2,6 +2,45 @@
   "categories": [
     {
       "id": 1,
+      "name": "Referencia",
+      "excercises": [
+        {
+          "id": 16,
+          "name": "músculos",
+          "video_url": null,
+          "model_url": "/models/vuelos_laterales.glb",
+          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "tips": [
+            {
+              "name": "mentón arriba",
+              "coordinates": null
+            },
+            {
+              "name": "saco pecho",
+              "coordinates": {}
+            },
+            {
+              "name": "saco cola",
+              "coordinates": {}
+            },
+            {
+              "name": "separo las rodillas",
+              "coordinates": {}
+            },
+            {
+              "name": "espalda derecha",
+              "coordinates": {}
+            },
+            {
+              "name": "bajo por debajo de las rodillas",
+              "coordinates": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
       "name": "Piernas",
       "excercises": [
         {
@@ -73,7 +112,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Caderas",
       "excercises": [
         {
@@ -178,7 +217,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Torso",
       "excercises": [
         {
@@ -250,7 +289,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Espalda",
       "excercises": [
         {
@@ -320,42 +359,42 @@
           ]
         },
         {
-            "id": 10,
-            "name": "remo serrucho con mancuerna",
-            "video_url": "https://www.youtube.com/watch?v=l4n26ss5oe0",
-            "model_url": "/models/vuelos_laterales.glb",
-            "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
-            "tips": [
-              {
-                "name": "sample tip",
-                "coordinates": null
-              },
-              {
-                "name": "sample tip",
-                "coordinates": {}
-              },
-              {
-                "name": "sample tip",
-                "coordinates": {}
-              },
-              {
-                "name": "sample tip",
-                "coordinates": {}
-              },
-              {
-                "name": "sample tip",
-                "coordinates": {}
-              },
-              {
-                "name": "sample tip",
-                "coordinates": {}
-              }
-            ]
-          }
+          "id": 10,
+          "name": "remo serrucho con mancuerna",
+          "video_url": "https://www.youtube.com/watch?v=l4n26ss5oe0",
+          "model_url": "/models/vuelos_laterales.glb",
+          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "tips": [
+            {
+              "name": "sample tip",
+              "coordinates": null
+            },
+            {
+              "name": "sample tip",
+              "coordinates": {}
+            },
+            {
+              "name": "sample tip",
+              "coordinates": {}
+            },
+            {
+              "name": "sample tip",
+              "coordinates": {}
+            },
+            {
+              "name": "sample tip",
+              "coordinates": {}
+            },
+            {
+              "name": "sample tip",
+              "coordinates": {}
+            }
+          ]
+        }
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Hombros",
       "excercises": [
         {
@@ -427,7 +466,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Brazos",
       "excercises": [
         {
@@ -499,7 +538,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Gluteos",
       "excercises": [
         {
