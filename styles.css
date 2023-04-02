@@ -40,7 +40,7 @@
     right: 0;
 }
 
-.subpage.list > nav {
+.subpage > nav {
     height: 80px;
     background-color: #04ac9c;
     color: white;
@@ -48,20 +48,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-}
-
-.subpage.list > nav > .help {
-    border: none;
-    background-color: transparent;
-    color: white;
-
-}
-
-.subpage.list > nav > h1{
     text-transform: uppercase;
 }
 
+.subpage.list > nav > .help,
+.subpage.model > nav > .back {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
 .subpage.list > .list-container {
+    height: calc(100% - 80px);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -125,27 +123,12 @@
     left: -100vw;
 }
 
+.subpage.model > nav {
+   justify-content: flex-start;
+}
+
 .subpage.model.open {
     left: 0;
-}
-
-.subpage.model > nav {
-    height: 80px;
-    width: 100%;
-    background-color: #04ac9c;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.subpage.model > nav > button {
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 26px;
-    font-weight: 700;
-    margin-left: 10px;
 }
 
 .subpage.model > model-viewer {

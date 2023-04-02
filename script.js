@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const list = document.querySelector('.subpage.list');
     const model = document.querySelector('.subpage.model');
     const modelViewer = document.querySelector('model-viewer');
-    const backButton = document.getElementById('back');
+    const backButton = document.querySelector('button.back');
     const helpButton = document.querySelector('button.help');
     const modelTitle = document.querySelector('h1.model-title');
     
@@ -15,12 +15,32 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="name"><span class="material-symbols-outlined">${category.icon ?? ''}</span class="name-text">${category.name}</div>` +
                         category.exercises.reduce((acc, ex) =>{
                             return acc + `<div class="exercise">
-                                            <button id="${ex.id}"><span>${ex.name}</span><span class="material-symbols-outlined">chevron_right</span></button>
+                                            <button data-exercise="${ex.id}">
+                                                <span>${ex.name}</span><span class="material-symbols-outlined">chevron_right</span>
+                                            </button>
                                         </div>`;
                         }, '') + 
                     `</section>`;
         };
-        document.querySelector('.list-container').innerHTML = res.categories.reduce((acc, cat) => acc + createCategory(cat), '');
+        const listContainer = document.querySelector('.list-container');
+        listContainer.innerHTML = res.categories.reduce((acc, cat) => acc + createCategory(cat), '');
+        
+        // Get our list of exercises from the data in a hash id -> exercise
+        const exercises = res.categories.reduce((acc, cat) => acc.concat(cat.exercises), []).reduce((acc, ex) => {
+            acc[ex.id] = ex;
+            return acc;
+        }, {});
+        
+        listContainer.querySelectorAll('button').forEach(btn => {
+            const exercise = exercises[btn.dataset.exercise];
+            if (!exercise) return;
+            btn.addEventListener('click', e => {
+                modelViewer.src = exercise.model_url;
+                modelTitle.innerText = exercise.name;
+                list.classList.remove('open');
+                model.classList.add('open');
+            });
+        });
         // Show the list screen & lift the splash screen
         splash.classList.remove('open');
         list.classList.add('open');
@@ -36,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Swal.fire({
             title: 'Ayuda',
             text: 'Elegí el ejercicio que quieras ver. Podés interactuar con el modelo 3D desde el navegador o verlo en realidad aumentada a través de tu cámara tocando el botón!',
-            icon: 'info',
+            icon: 'question',
             iconColor: '#04ac9c',
             customClass: {title: 'cy-swal2-title', confirmButton: 'cy-swal2-confirm'},
             confirmButtonText: 'OK!'
