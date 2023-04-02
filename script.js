@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modelTitle = document.querySelector('h1.model-title');
     
     // Splash screen starts on, get data
-    fetch('/exercises.json').then(res => res.json()).then(res => {
+    fetch('./exercises.json').then(res => res.json()).then(res => {
         // create category
         const createCategory = (category) =>  {
             return `<section class="category">
