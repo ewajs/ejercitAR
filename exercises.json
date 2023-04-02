@@ -11,32 +11,7 @@
           "video_url": null,
           "model_url": "./models/musculos.glb",
           "description": "Esta es una referencia de los músculos del cuerpo",
-          "tips": [
-            {
-              "name": "mentón arriba",
-              "coordinates": null
-            },
-            {
-              "name": "saco pecho",
-              "coordinates": {}
-            },
-            {
-              "name": "saco cola",
-              "coordinates": {}
-            },
-            {
-              "name": "separo las rodillas",
-              "coordinates": {}
-            },
-            {
-              "name": "espalda derecha",
-              "coordinates": {}
-            },
-            {
-              "name": "bajo por debajo de las rodillas",
-              "coordinates": {}
-            }
-          ]
+          "tips": []
         }
       ]
     },

@@ -36,20 +36,28 @@
             </button>
             <h1 class="model-title"></h1>
         </nav>
-        <model-viewer
-        camera-orbit="0deg 90deg 0.5m"
-        autoplay
-        ar 
-        ar-modes="scene-viewer quick-look" 
-        shadow-intensity="1" 
-        camera-controls>
-            <button slot="ar-button" class="ar-button">
-                <span class="material-symbols-outlined">view_in_ar</span>
-                Ver en RA
-            </button>
-        </model-viewer>
-        
-        
+        <div class="content">
+            <model-viewer
+            camera-orbit="0deg 90deg 0.5m"
+            autoplay
+            ar 
+            ar-modes="scene-viewer quick-look" 
+            shadow-intensity="1" 
+            camera-controls>
+                <button slot="ar-button" class="ar-button">
+                    <span class="material-symbols-outlined">view_in_ar</span>
+                    Ver en RA
+                </button>
+            </model-viewer>
+            <div class="tab"><span class="material-symbols-outlined">info</span><span class="material-symbols-outlined less">expand_less</span><span class="material-symbols-outlined more">expand_more</span></div>
+            <div class="info">
+                <h1>Descripción</h1>
+                <p class="description">Description goes here</p>
+                <a id="video" target="_blank"><span>Ver video</span><span class="material-symbols-outlined">open_in_new</span></a>
+                <h1 class="tip-title">Tips</h1>
+                <ol class="tip-list"></ol>
+            </div>
+        </div>
     </div>
 </body>
 </html>

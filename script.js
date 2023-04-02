@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const splash = document.querySelector('.subpage.splash');
     const list = document.querySelector('.subpage.list');
     const model = document.querySelector('.subpage.model');
+    const modelPageContent =  document.querySelector('.subpage.model > .content');
+    const exerciseDescription = modelPageContent.querySelector('.description');
+    const exerciseVideo = modelPageContent.querySelector('#video');
+    const exerciseTips = modelPageContent.querySelector('.tip-list');
+    const exerciseTipsTitle = modelPageContent.querySelector('.tip-title');
     const modelViewer = document.querySelector('model-viewer');
     const backButton = document.querySelector('button.back');
     const helpButton = document.querySelector('button.help');
@@ -37,6 +42,19 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.addEventListener('click', e => {
                 modelViewer.src = exercise.model_url;
                 modelTitle.innerText = exercise.name;
+                exerciseDescription.innerText = exercise.description;
+                if (exercise.video_url) {
+                    exerciseVideo.href = exercise.video_url;
+                    exerciseVideo.classList.remove('hide');
+                } else {
+                    exerciseVideo.classList.add('hide');
+                }
+                if (exercise.tips.length > 0){ 
+                    exerciseTips.innerHTML = exercise.tips.reduce((acc, tip) => acc + `<li>${tip.name}</li>`, '');
+                    exerciseTipsTitle.classList.remove('hide');
+                } else {
+                    exerciseTipsTitle.classList.add('hide');
+                }
                 list.classList.remove('open');
                 model.classList.add('open');
             });
@@ -48,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Back button
     backButton.addEventListener('click', () => {
+        modelPageContent.classList.remove('expanded');
         model.classList.remove('open');
         list.classList.add('open');
     });
@@ -62,6 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
             confirmButtonText: 'OK!'
           });
     })
+
+    modelPageContent.querySelector('.tab').addEventListener('click', () => modelPageContent.classList.toggle('expanded'));
 
     // Model selection
     // document.querySelectorAll('.subpage.list button.item').forEach(btn => {
