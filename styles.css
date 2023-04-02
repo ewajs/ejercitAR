@@ -133,7 +133,6 @@
 }
 
 .subpage.model > .content {
-    height: calc(100vh - 80px);
     width: 100%;
     position: absolute;
     top: 80px;
