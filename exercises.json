@@ -9,7 +9,7 @@
           "id": 16,
           "name": "músculos",
           "video_url": null,
-          "model_url": "/models/musculos.glb",
+          "model_url": "./models/musculos.glb",
           "description": "Esta es una referencia de los músculos del cuerpo",
           "tips": [
             {
@@ -49,7 +49,7 @@
           "id": 1,
           "name": "sentadilla barra alta",
           "video_url": "https://www.instagram.com/p/Cc2nJUZLolF",
-          "model_url": "/models/peso_muerto_convencional.glb",
+          "model_url": "./models/peso_muerto_convencional.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -82,7 +82,7 @@
           "id": 2,
           "name": "búlgara con dos mancuernas",
           "video_url": "https://www.youtube.com/shorts/qf3kNevPhHE",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -122,7 +122,7 @@
           "id": 3,
           "name": "peso muerto convencional",
           "video_url": "https://www.instagram.com/p/CmwIET5M00r",
-          "model_url": "/models/peso_muerto_convencional.glb",
+          "model_url": "./models/peso_muerto_convencional.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -155,7 +155,7 @@
           "id": 4,
           "name": "peso muerto sumo",
           "video_url": "https://www.youtube.com/shorts/xeyYsxBaK1Y",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -188,7 +188,7 @@
           "id": 5,
           "name": "peso muerto rumano",
           "video_url": "https://www.youtube.com/shorts/9z6AYqXkBbY",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -228,7 +228,7 @@
           "id": 6,
           "name": "pectoral",
           "video_url": "https://www.instagram.com/p/CocmOmdvMoL/",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -261,7 +261,7 @@
           "id": 7,
           "name": "push ups",
           "video_url": "https://www.youtube.com/watch?v=Ut6rHKm081A",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -301,7 +301,7 @@
           "id": 8,
           "name": "dominadas agarre prono",
           "video_url": "https://www.youtube.com/shorts/fwrTeRtNWRc",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -334,7 +334,7 @@
           "id": 9,
           "name": "remo con barra",
           "video_url": "https://www.youtube.com/shorts/I_a_jDTDT1U",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -367,7 +367,7 @@
           "id": 10,
           "name": "remo serrucho con mancuerna",
           "video_url": "https://www.youtube.com/watch?v=l4n26ss5oe0",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -407,7 +407,7 @@
           "id": 11,
           "name": "press militar con barra",
           "video_url": "https://www.youtube.com/watch?v=g5lHxxy-u9Y",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -440,7 +440,7 @@
           "id": 12,
           "name": "vuelos laterales",
           "video_url": "https://www.youtube.com/watch?v=Wbkz6hEq03Q&list=RDQMWOa99IyNLDA&start_radio=1",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -480,7 +480,7 @@
           "id": 13,
           "name": "curl de biceps con mancuernas",
           "video_url": "https://www.youtube.com/shorts/18yw0UJYy2o",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -513,7 +513,7 @@
           "id": 14,
           "name": "triceps en polea",
           "video_url": "https://www.youtube.com/shorts/EWsq_UbGqPY",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -553,7 +553,7 @@
           "id": 15,
           "name": "hip thrusts",
           "video_url": "https://www.youtube.com/watch?v=oeua30yIOF4&list=RDQMBhImIl58Qc0&start_radio=1",
-          "model_url": "/models/vuelos_laterales.glb",
+          "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
