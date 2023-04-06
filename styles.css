@@ -178,11 +178,12 @@
 }
 
 .subpage.model > .content > .tab {
-    position: relative;
-    bottom: 40px;
+    position: absolute;
+    bottom: 0;
     left: 20px;
     height: 40px;
     width: 60px;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,7 +202,7 @@
 }
 
 .subpage.model > .content.expanded > .tab {
-    bottom: 340px;
+    bottom: 300px;
 }
 
 .subpage.model > .content.expanded > .tab > .less {
@@ -213,10 +214,11 @@
 }
 
 .subpage.model > .content > .info {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 300px;
-    bottom: 40px;
+    bottom: -300px;
+    z-index: 10;
     border-top: 2px solid #b0e8e3;
     border-right: 2px solid #b0e8e3;
     border-left: 2px solid #b0e8e3;
@@ -253,7 +255,7 @@
 }
 
 .subpage.model > .content.expanded > .info {
-    bottom: 340px;
+    bottom: 0;
 }
 /* Swal Customization */
 

@@ -1,3 +1,4 @@
+let modelViewer;
 document.addEventListener('DOMContentLoaded', () => {
     const splash = document.querySelector('.subpage.splash');
     const list = document.querySelector('.subpage.list');
@@ -7,10 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const exerciseVideo = modelPageContent.querySelector('#video');
     const exerciseTips = modelPageContent.querySelector('.tip-list');
     const exerciseTipsTitle = modelPageContent.querySelector('.tip-title');
-    const modelViewer = document.querySelector('model-viewer');
     const backButton = document.querySelector('button.back');
     const helpButton = document.querySelector('button.help');
     const modelTitle = document.querySelector('h1.model-title');
+
+
+    modelViewer = document.querySelector('model-viewer');
+    const modelViewerBase = modelViewer.cloneNode(true);
+    function reloadModelViewer(model_src) {
+        console.log("Reload Model Viewer with: ", model_src);
+        const parentElement = modelViewer.parentElement;
+        parentElement.removeChild(modelViewer);
+        modelViewer = modelViewerBase.cloneNode(true);
+        modelViewer.src = model_src;
+        parentElement.appendChild(modelViewer);
+    }
     
     // Splash screen starts on, get data
     fetch('./exercises.json').then(res => res.json()).then(res => {
@@ -40,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const exercise = exercises[btn.dataset.exercise];
             if (!exercise) return;
             btn.addEventListener('click', e => {
-                modelViewer.src = exercise.model_url;
+                reloadModelViewer(exercise.model_url);
                 modelTitle.innerText = exercise.name;
                 exerciseDescription.innerText = exercise.description;
                 if (exercise.video_url) {
@@ -83,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     modelPageContent.querySelector('.tab').addEventListener('click', () => modelPageContent.classList.toggle('expanded'));
+
 
     // Model selection
     // document.querySelectorAll('.subpage.list button.item').forEach(btn => {
