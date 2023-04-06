@@ -29,7 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // create category
         const createCategory = (category) =>  {
             return `<section class="category">
-                        <div class="name"><span class="material-symbols-outlined">${category.icon ?? ''}</span class="name-text">${category.name}</div>` +
+                        <div class="name">
+                            <div>
+                                <span class="material-symbols-outlined icon">${category.icon ?? ''}</span class="name-text">${category.name}
+                            </div>    
+                            <span class="material-symbols-outlined control"></span>
+                        </div>
+                        <div class="excercise-list">` +
                         category.exercises.reduce((acc, ex) =>{
                             return acc + `<div class="exercise">
                                             <button data-exercise="${ex.id}">
@@ -37,7 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                             </button>
                                         </div>`;
                         }, '') + 
-                    `</section>`;
+                    `   </div>
+                    </section>`;
         };
         const listContainer = document.querySelector('.list-container');
         listContainer.innerHTML = res.categories.reduce((acc, cat) => acc + createCategory(cat), '');
@@ -47,7 +54,33 @@ document.addEventListener('DOMContentLoaded', () => {
             acc[ex.id] = ex;
             return acc;
         }, {});
+
+        // Category expansion
+        listContainer.querySelectorAll('.category > .name').forEach(catName => {
+            const categoryElement = catName.parentElement;
+            const excerciseList = categoryElement.querySelector('.excercise-list');
+            collapseSection(excerciseList, false)
+            catName.addEventListener('click', () => {
+                // Close other expanded category if present
+                const other = listContainer.querySelector('.category.expanded')
+                if (other !== null) {
+                    other.classList.remove('expanded');
+                    collapseSection(other.querySelector('.excercise-list'));
+                } 
+                // Toggle myself
+                const isCollapsed = !categoryElement.classList.contains('expanded');
+                categoryElement.classList.toggle('expanded');
+                if(isCollapsed) {
+                    expandSection(excerciseList)
+                } else {
+                    collapseSection(excerciseList)
+                }
+                
+                
+            })
+        });
         
+        // Exercise selection 
         listContainer.querySelectorAll('button').forEach(btn => {
             const exercise = exercises[btn.dataset.exercise];
             if (!exercise) return;
@@ -97,42 +130,56 @@ document.addEventListener('DOMContentLoaded', () => {
     modelPageContent.querySelector('.tab').addEventListener('click', () => modelPageContent.classList.toggle('expanded'));
 
 
-    // Model selection
-    // document.querySelectorAll('.subpage.list button.item').forEach(btn => {
-    //     btn.addEventListener('click', () => {
-    //         if (btn.dataset.hotspots === "true") {
-    //             modelViewerHotspots.src = btn.dataset.modelSrc;
-    //             modelViewerNoHotspots.classList.add('hide');
-    //             modelViewerHotspots.classList.remove('hide');
-    //         } else {
-    //             modelViewerNoHotspots.src = btn.dataset.modelSrc;
-    //             modelViewerHotspots.classList.add('hide');
-    //             modelViewerNoHotspots.classList.remove('hide');
-    //         }
-    //         // Override title in a very unprofessional way
-    //         modelTitle.innerHTML = btn.innerHTML;
-    //         list.classList.remove('open');
-    //         model.classList.add('open');
-    //     });
-    // });
+    // This is the important part!
 
-    // Hotspot listeners
-    // const hotspotClicked = (hotspot) => {
-    //     const hotspotData = modelViewerHotspots.queryHotspot(hotspot.slot);
-    //     console.log(hotspotData);
-    //     modelViewerHotspots.cameraTarget = `${hotspotData.position.x}m ${hotspotData.position.y}m ${hotspotData.position.z}m`;
-    //     Swal.fire({
-    //         title: hotspot.dataset.title,
-    //         text: hotspot.dataset.message,
-    //         icon: 'info',
-    //         iconColor: '#04ac9c',
-    //         customClass: {title: 'cy-swal2-title', confirmButton: 'cy-swal2-confirm'},
-    //         confirmButtonText: 'Entendido!'
-    //       });
-    //   }
+function collapseSection(element, animate = true) {
+    if (!animate) {
+        element.style.height = 0 + 'px';
+        return;
+    }
+    // get the height of the element's inner content, regardless of its actual size
+    var sectionHeight = element.scrollHeight;
     
-    // modelViewerHotspots.querySelectorAll('button.Hotspot').forEach((hotspot) => {
-    //     console.log("Configuring hotspot: ", hotspot);
-    //     hotspot.addEventListener('click', () => hotspotClicked(hotspot));
-    // });
+    // temporarily disable all css transitions
+    var elementTransition = element.style.transition;
+    element.style.transition = '';
+    
+    // on the next frame (as soon as the previous style change has taken effect),
+    // explicitly set the element's height to its current pixel height, so we 
+    // aren't transitioning out of 'auto'
+    requestAnimationFrame(function() {
+      element.style.height = sectionHeight + 'px';
+      element.style.transition = elementTransition;
+      
+      // on the next frame (as soon as the previous style change has taken effect),
+      // have the element transition to height: 0
+      requestAnimationFrame(function() {
+        element.style.height = 0 + 'px';
+      });
+    });
+    
+    // mark the section as "currently collapsed"
+    element.setAttribute('data-collapsed', 'true');
+  }
+  
+  function expandSection(element) {
+    // get the height of the element's inner content, regardless of its actual size
+    var sectionHeight = element.scrollHeight;
+    
+    // have the element transition to the height of its inner content
+    element.style.height = sectionHeight + 'px';
+  
+    // when the next css transition finishes (which should be the one we just triggered)
+    element.addEventListener('transitionend', function(e) {
+      // remove this event listener so it only gets triggered once
+      element.removeEventListener('transitionend', arguments.callee);
+      
+      // remove "height" from the element's inline styles, so it can return to its initial value
+      element.style.height = null;
+    });
+    
+    // mark the section as "currently not collapsed"
+    element.setAttribute('data-collapsed', 'false');
+  }
+  
 });
