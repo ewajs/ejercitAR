@@ -198,8 +198,55 @@
     align-items: center;
 }
 
-.subpage.model > .content > model-viewer > .ar-button > span{
+.subpage.model > .content > model-viewer > .ar-button > span {
    margin-right: 10px;
+}
+
+.subpage.model > .content > model-viewer > .model-hotspot {
+    color: #04ac9c;
+    border: 2px solid #d5f5f2;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.5s linear;
+    display: none;
+ }
+
+ .subpage.model > .content > model-viewer.show-hotspots > .model-hotspot {
+    display: block;
+ }
+
+.subpage.model > .content > model-viewer > .model-hotspot:hover {
+    background-color: #d5f5f2;
+}
+
+.subpage.model > .content > .tip-display-toggle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #b0e8e3;
+    border-right: 2px solid #b0e8e3;
+    border-left: 2px solid #b0e8e3;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: white;
+    color: #04ac9c;
+    transition: background-color 0.5s linear, color 0.5s linear;
+    cursor: pointer;
+}
+
+.subpage.model > .content > .tip-display-toggle.active {
+    background-color: #04ac9c;
+    color: white;
 }
 
 .subpage.model > .content > .tab {
@@ -220,6 +267,7 @@
     background-color: white;
     color: #04ac9c;
     transition: bottom 1s ease-in-out;
+    cursor: pointer;
 }
 
 .subpage.model > .content > .tab > .more {
