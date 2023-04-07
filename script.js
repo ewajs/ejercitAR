@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hotspot.addEventListener('click', () =>  Swal.fire({
                     title: 'Tip',
                     text: tip.name,
+                    color: '#04ac9c',
                     icon: 'info',
                     iconColor: '#04ac9c',
                     customClass: {title: 'cy-swal2-title', confirmButton: 'cy-swal2-confirm'},
@@ -143,7 +144,9 @@ document.addEventListener('DOMContentLoaded', () => {
     helpButton.addEventListener('click', () => {
         Swal.fire({
             title: 'Ayuda',
-            text: 'Elegí el ejercicio que quieras ver. Podés interactuar con el modelo 3D desde el navegador o verlo en realidad aumentada a través de tu cámara tocando el botón!',
+            html: '<p>Elegí el ejercicio que quieras ver. Podés interactuar con el modelo 3D desde el navegador o verlo en realidad aumentada a través de tu cámara tocando el botón con el ícono <span class="material-symbols-outlined">view_in_ar</span>!</p>' + 
+                '<p>Podés activar los tips sobre la animación tocando el ícono <span class="material-symbols-outlined">tips_and_updates</span> y ver los consejos tocando los tips!</p>',
+            color: '#04ac9c',
             icon: 'question',
             iconColor: '#04ac9c',
             customClass: {title: 'cy-swal2-title', confirmButton: 'cy-swal2-confirm'},

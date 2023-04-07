@@ -182,25 +182,24 @@
 }
 
 .subpage.model > .content > model-viewer > .ar-button {
-    background-color: #04ac9c;
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 10px;
-    border-radius: 10px;
     position: absolute;
     bottom: 0;
-    right: 0;
-    margin: 10px;
-    border: none;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 2px solid #b0e8e3;
+    border-right: 2px solid #b0e8e3;
+    border-left: 2px solid #b0e8e3;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: white;
+    color: #04ac9c;
 }
 
-.subpage.model > .content > model-viewer > .ar-button > span {
-   margin-right: 10px;
-}
 
 .subpage.model > .content > model-viewer > .model-hotspot {
     color: #04ac9c;
@@ -338,4 +337,20 @@
 
 .cy-swal2-confirm {
     background-color: #04ac9c !important;
+}
+
+.swal2-html-container {
+    color: #04ac9c;
+}
+
+.swal2-html-container > p {
+    color: #04ac9c;
+    line-height: 30px;
+}
+
+.swal2-html-container > p > span.material-symbols-outlined {
+    padding: 5px;
+    border-radius: 3px;
+    border: 2px solid #b0e8e3;
+    vertical-align: middle;
 }
