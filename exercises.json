@@ -10,6 +10,7 @@
           "name": "músculos",
           "video_url": null,
           "model_url": "./models/musculos.glb",
+          "orbit": "0deg 90deg 4m",
           "description": "Esta es una referencia de los músculos del cuerpo",
           "tips": []
         }
@@ -25,6 +26,7 @@
           "name": "sentadilla barra alta",
           "video_url": "https://www.instagram.com/p/Cc2nJUZLolF",
           "model_url": "./models/sentadilla_barra_alta.glb",
+          "orbit": "0deg 90deg 4.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -58,6 +60,7 @@
           "name": "búlgara con dos mancuernas",
           "video_url": "https://www.youtube.com/shorts/qf3kNevPhHE",
           "model_url": "./models/bulgara_dos_mancuernas.glb",
+          "orbit": "0deg 90deg 4m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -94,6 +97,7 @@
           "name": "peso muerto convencional",
           "video_url": "https://www.instagram.com/p/CmwIET5M00r",
           "model_url": "./models/peso_muerto_convencional.glb",
+          "orbit": "0deg 90deg 4.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -129,6 +133,7 @@
         {
           "id": 4,
           "name": "peso muerto sumo",
+          "orbit": "0deg 90deg 4.5m",
           "video_url": "https://www.youtube.com/shorts/xeyYsxBaK1Y",
           "model_url": "./models/peso_muerto_sumo.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
@@ -170,6 +175,7 @@
         {
           "id": 5,
           "name": "peso muerto rumano",
+          "orbit": "0deg 90deg 4.5m",
           "video_url": "https://www.youtube.com/shorts/9z6AYqXkBbY",
           "model_url": "./models/peso_muerto_rumano.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
@@ -215,7 +221,8 @@
           "id": 6,
           "name": "banco plano con barra",
           "video_url": "https://www.instagram.com/p/CocmOmdvMoL/",
-          "model_url": "./models/vuelos_laterales.glb",
+          "model_url": "./models/banco_plano_barra.glb",
+          "orbit": "0deg 90deg 4.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -261,6 +268,7 @@
           "name": "push ups",
           "video_url": "https://www.youtube.com/watch?v=Ut6rHKm081A",
           "model_url": "./models/push_up.glb",
+          "orbit": "0deg 90deg 3.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -293,6 +301,7 @@
           "name": "dominadas agarre prono",
           "video_url": "https://www.youtube.com/shorts/fwrTeRtNWRc",
           "model_url": "./models/dominada_prono.glb",
+          "orbit": "90deg 90deg 6m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -314,6 +323,7 @@
           "name": "remo con barra",
           "video_url": "https://www.youtube.com/shorts/I_a_jDTDT1U",
           "model_url": "./models/remo_barra.glb",
+          "orbit": "0deg 90deg 4.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -347,6 +357,7 @@
           "name": "remo serrucho con mancuerna",
           "video_url": "https://www.youtube.com/watch?v=l4n26ss5oe0",
           "model_url": "./models/remo_serrucho_mancuerna.glb",
+          "orbit": "0deg 90deg 0.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -387,6 +398,7 @@
           "name": "press militar con barra",
           "video_url": "https://www.youtube.com/watch?v=g5lHxxy-u9Y",
           "model_url": "./models/press_militar_barra.glb",
+          "orbit": "0deg 90deg 4.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -408,6 +420,7 @@
           "name": "vuelos laterales",
           "video_url": "https://www.youtube.com/watch?v=Wbkz6hEq03Q&list=RDQMWOa99IyNLDA&start_radio=1",
           "model_url": "./models/vuelos_laterales.glb",
+          "orbit": "0deg 90deg 0.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -436,6 +449,7 @@
           "name": "curl de biceps con mancuernas",
           "video_url": "https://www.youtube.com/shorts/18yw0UJYy2o",
           "model_url": "./models/curl_biceps_mancuerna.glb",
+          "orbit": "0deg 90deg 0.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -464,7 +478,8 @@
           "id": 14,
           "name": "triceps en polea",
           "video_url": "https://www.youtube.com/shorts/EWsq_UbGqPY",
-          "model_url": "./models/vuelos_laterales.glb",
+          "model_url": "./models/triceps_poleas.glb",
+          "orbit": "180deg 90deg 0.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -497,6 +512,7 @@
           "name": "hip thrusts",
           "video_url": "https://www.youtube.com/watch?v=oeua30yIOF4&list=RDQMBhImIl58Qc0&start_radio=1",
           "model_url": "./models/hip_thrust.glb",
+          "orbit": "0deg 90deg 4.5m",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {

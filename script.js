@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modelViewer = document.querySelector('model-viewer');
     const modelViewerBase = modelViewer.cloneNode(true);
-    function reloadModelViewer(model_src) {
-        console.log("Reload Model Viewer with: ", model_src);
+    function reloadModelViewer(exercise) {
         const parentElement = modelViewer.parentElement;
         parentElement.removeChild(modelViewer);
         modelViewer = modelViewerBase.cloneNode(true);
-        modelViewer.src = model_src;
+        modelViewer.src = exercise.model_url;
+        modelViewer.cameraOrbit = exercise.orbit ?? "0deg 90deg 0.5m";
         parentElement.appendChild(modelViewer);
     }
     
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const exercise = exercises[btn.dataset.exercise];
             if (!exercise) return;
             btn.addEventListener('click', e => {
-                reloadModelViewer(exercise.model_url);
+                reloadModelViewer(exercise);
                 modelTitle.innerText = exercise.name;
                 exerciseDescription.innerText = exercise.description;
                 if (exercise.video_url) {
