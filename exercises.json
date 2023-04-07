@@ -24,7 +24,7 @@
           "id": 1,
           "name": "sentadilla barra alta",
           "video_url": "https://www.instagram.com/p/Cc2nJUZLolF",
-          "model_url": "./models/peso_muerto_convencional.glb",
+          "model_url": "./models/sentadilla_barra_alta.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
@@ -496,7 +496,7 @@
           "id": 15,
           "name": "hip thrusts",
           "video_url": "https://www.youtube.com/watch?v=oeua30yIOF4&list=RDQMBhImIl58Qc0&start_radio=1",
-          "model_url": "./models/hip_thrusts.glb",
+          "model_url": "./models/hip_thrust.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
