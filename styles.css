@@ -173,14 +173,6 @@
     height: 100%;
 }
 
-.subpage.model > .content > model-viewer > button {
-    border: 1px solid gray;
-    padding: 5px;
-    background-color: white;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
 .subpage.model > .content > model-viewer > .ar-button {
     position: absolute;
     bottom: 0;
@@ -194,10 +186,13 @@
     border-top: 2px solid #b0e8e3;
     border-right: 2px solid #b0e8e3;
     border-left: 2px solid #b0e8e3;
+    border-bottom: none;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: white;
     color: #04ac9c;
+    box-sizing: content-box;
+    padding: 0;
 }
 
 
@@ -344,7 +339,6 @@
 }
 
 .swal2-html-container > p {
-    color: #04ac9c;
     line-height: 30px;
 }
 
