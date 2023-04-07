@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             catName.addEventListener('click', () => {
                 // Close other expanded category if present
                 const other = listContainer.querySelector('.category.expanded')
-                if (other !== null) {
+                if (other !== null && other !== categoryElement) {
                     other.classList.remove('expanded');
                     collapseSection(other.querySelector('.excercise-list'));
                 } 
