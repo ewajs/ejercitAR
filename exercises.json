@@ -97,27 +97,31 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Pies en ancho de hombros y las manos por fuera de las piernas",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Bajo bien la cola",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Levanto lo hombros",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Saco pecho",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Saco cola",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Subo pecho y hombros de manera coordinada",
+              "coordinates": {}
+            },
+            {
+              "name": "Retengo el aire toda la subida",
               "coordinates": {}
             }
           ]
@@ -130,27 +134,35 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Piernas separadas y pies mirando para afuera",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Agarre en ancho de hombros",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Bajo bien la cola",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Levanto lo hombros",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Saco pecho",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Saco cola",
+              "coordinates": {}
+            },
+            {
+              "name": "Subo pecho y hombros de manera coordinada",
+              "coordinates": {}
+            },
+            {
+              "name": "Retengo el aire toda la subida",
               "coordinates": {}
             }
           ]
@@ -163,27 +175,31 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Pies ancho de hombros y la manos por fuera de la piernas",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Dejo la cola levemente arriba y las rodillas levemente flexionadas",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Saco pecho",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Saco cola",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Espalda derecha",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Subo pecho y hombros de manera coordinada",
+              "coordinates": {}
+            },
+            {
+              "name": "Retengo el aire toda la subida",
               "coordinates": {}
             }
           ]
@@ -197,33 +213,45 @@
       "exercises": [
         {
           "id": 6,
-          "name": "pectoral",
+          "name": "banco plano con barra",
           "video_url": "https://www.instagram.com/p/CocmOmdvMoL/",
           "model_url": "./models/vuelos_laterales.glb",
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Pies bien apretados contra el piso",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Gluteos apretados",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Espalda bajo bien curva y sin tocar el banco",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Saco pecho",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Agarre más amplio que los hombros",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "En el rack la barra tiene que estar arriba de los ojos",
+              "coordinates": {}
+            },
+            {
+              "name": "Una vez en el aire la barra inicio a la altura del cuello",
+              "coordinates": {}
+            },
+            {
+              "name": "La barra realiza parábola hasta tocar suave el linea por debajo del pectoral",
+              "coordinates": {}
+            },
+            {
+              "name": "La barra sube de manera explosiva en parábola hasta la altura de cuello",
               "coordinates": {}
             }
           ]
@@ -236,27 +264,19 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Manos más amplio que los hombros",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Pies levemente separados",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Bajo hasta estar cerca del piso de manera controlado",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
+              "name": "Subo coordinanado hombros con cintura de manera explosiva",
               "coordinates": {}
             }
           ]
@@ -276,27 +296,15 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Agarrar la barra con las palmas de las manos mirando para adelante",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Colgarse y subir de manera explosiva",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
+              "name": "Bajar de manera lenta y controlada hasta tener los codos estirados",
               "coordinates": {}
             }
           ]
@@ -309,19 +317,19 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Levantar la barra del piso con el pecho afuera y la cola afuera",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "La espalda derecha siempre",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Colocar el torso a 45 grados respecto al suelo",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Subir la barra bien cerca de la piernas hacer contacto con la parte inferior de la panza",
               "coordinates": {}
             },
             {
@@ -342,27 +350,27 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "En un banco plano colar una mano arriba del banco por debajo de la cara",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Colocar un pierna con la rodilla apoya más adelantada que la pierna que esta abajo",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "La pierna del piso bien retrasa",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "El peso comienza a la altura de la cara con el hombro en maxima extensión",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Subir el peso en parábola hasta la linea del ombligo",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Bajar de manera controlada hasta la altura de la cara en parábola",
               "coordinates": {}
             }
           ]
@@ -382,27 +390,15 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "La barra empieza abajo del mentón",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Sube al ras de la cara hasta estar arriba de la cabeza",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
+              "name": "Baja de manera controlada y muy cerca de la cara hasta pasar el mentón",
               "coordinates": {}
             }
           ]
@@ -415,27 +411,15 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Brazos levemente flexionados",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Las manos suben hasta hacer una V pero un poco más amplia",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
+              "name": "Bajar de manera controlada",
               "coordinates": {}
             }
           ]
@@ -455,27 +439,23 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Empezar con las manos al lado del cuerpo",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Palmas de las manos miran a las piernas",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Suben girando hasta estar arriba y mirar los hombros",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Bajar en posición supina (palmas de las mano miran el techo)",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
+              "name": "A último momento roto las manos para que miren a las piernas",
               "coordinates": {}
             }
           ]
@@ -488,27 +468,19 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Codos pegados al cuerpo",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Ponerse lo más abajo de la polea posible",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Bajar y tirar la cuerda para los lados",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
+              "name": "Subir de manera controlada, solo las manos, sin mover los codos",
               "coordinates": {}
             }
           ]
@@ -528,27 +500,23 @@
           "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
           "tips": [
             {
-              "name": "sample tip",
+              "name": "Poner la barra a la altura de la cintura",
               "coordinates": null
             },
             {
-              "name": "sample tip",
+              "name": "Subir controlado",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Hacer una pausa arriba de todo con la cadera hiperextendida",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
+              "name": "Bajar controlado",
               "coordinates": {}
             },
             {
-              "name": "sample tip",
-              "coordinates": {}
-            },
-            {
-              "name": "sample tip",
+              "name": "En la parte superior la rodilla y el pie deben estar alineados",
               "coordinates": {}
             }
           ]
