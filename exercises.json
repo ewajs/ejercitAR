@@ -27,7 +27,7 @@
           "video_url": "https://www.instagram.com/p/Cc2nJUZLolF",
           "model_url": "./models/sentadilla_barra_alta.glb",
           "orbit": "0deg 90deg 4.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Se trata de un ejercicio multiauricular por lo tanto muy demandante. Priorizá la espalda derecha, bajar todo lo posible y mantener la verticalidad del torso.",
           "tips": [
             {
               "name": "Mentón arriba",
@@ -61,7 +61,7 @@
           "video_url": "https://www.youtube.com/shorts/qf3kNevPhHE",
           "model_url": "./models/bulgara_dos_mancuernas.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Una variante de fuerza de la sentadilla. Es un excelente ejercicio para el gluteo. Dale prioridad a la espalda derecha y a bajar todo lo posible. La inclinación de tu cuerpo va a ser determinante en la prioridad muscular que elijas. Un torso más inclinado priorizará el glúteo y un más recto le dará prioridad al cuadríceps.",
           "tips": [
             {
               "name": "Rodilla alineada con pie",
@@ -98,7 +98,7 @@
           "video_url": "https://www.instagram.com/p/CmwIET5M00r",
           "model_url": "./models/peso_muerto_convencional.glb",
           "orbit": "0deg 90deg 4.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Ejercicio multiarticular por lo tanto muy demandante, ideal para trabajar la parte posterior del cuerpo. Prioridad a la espalda derecha y la barra bien cerca de las piernas.",
           "tips": [
             {
               "name": "Pies en ancho de hombros y las manos por fuera de las piernas",
@@ -136,7 +136,7 @@
           "orbit": "0deg 90deg 4.5m",
           "video_url": "https://www.youtube.com/shorts/xeyYsxBaK1Y",
           "model_url": "./models/peso_muerto_sumo.glb",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Ejercicio multiarticular por lo tanto muy demandante. Prioridad a la espalda derecha y la barra bien cerca de las piernas. Recuerda que en esta variante los pies van separados y las puntas de los pies miran hacia los costados.",
           "tips": [
             {
               "name": "Piernas separadas y pies mirando para afuera",
@@ -178,7 +178,7 @@
           "orbit": "0deg 90deg 4.5m",
           "video_url": "https://www.youtube.com/shorts/9z6AYqXkBbY",
           "model_url": "./models/peso_muerto_rumano.glb",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Buena variante del peso muerto. Recuerda que esta variante no llega a tocar el piso, la cadera debe tener mucha flexión. Prioridad a la espalda derecha y a la barra pegada a la piernas.",
           "tips": [
             {
               "name": "Pies ancho de hombros y la manos por fuera de la piernas",
@@ -223,7 +223,7 @@
           "video_url": "https://www.instagram.com/p/CocmOmdvMoL/",
           "model_url": "./models/banco_plano_barra.glb",
           "orbit": "0deg 90deg 4.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Ejercicio multiarticular que involucra mucho los pectorales. Recuerda hacer una retracción escapular y hacer una parábola a la hora de subir y bajar la barra.",
           "tips": [
             {
               "name": "Pies bien apretados contra el piso",
@@ -269,7 +269,7 @@
           "video_url": "https://www.youtube.com/watch?v=Ut6rHKm081A",
           "model_url": "./models/push_up.glb",
           "orbit": "0deg 90deg 3.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Ejercicio para pectorales. Recuerda alinear manos con codos. También mantener el cuerpo en posición recta.",
           "tips": [
             {
               "name": "Manos más amplio que los hombros",
@@ -302,7 +302,7 @@
           "video_url": "https://www.youtube.com/shorts/fwrTeRtNWRc",
           "model_url": "./models/dominada_prono.glb",
           "orbit": "90deg 90deg 6m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Ejercicio clave para espalda alta (dorsales). Recuerda estirar bien los codos cuando bajas y pasar el mentón sobre la barra cuando subís.",
           "tips": [
             {
               "name": "Agarrar la barra con las palmas de las manos mirando para adelante",
@@ -324,7 +324,7 @@
           "video_url": "https://www.youtube.com/shorts/I_a_jDTDT1U",
           "model_url": "./models/remo_barra.glb",
           "orbit": "0deg 90deg 4.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Ejercicio clave para dorsales. Recuerda tener la espalda derecha. La barra no vuelve a tocar el piso. También acordate que la barra sube y baja pegada a la piernas.",
           "tips": [
             {
               "name": "Levantar la barra del piso con el pecho afuera y la cola afuera",
@@ -358,7 +358,7 @@
           "video_url": "https://www.youtube.com/watch?v=l4n26ss5oe0",
           "model_url": "./models/remo_serrucho_mancuerna.glb",
           "orbit": "0deg 90deg 0.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": " Ideal para dorsales. La espada va muy derecha. Este remo te va a permitir dar un mayor recorrido a la hora de trabajar el dorsal.",
           "tips": [
             {
               "name": "En un banco plano colar una mano arriba del banco por debajo de la cara",
@@ -399,7 +399,7 @@
           "video_url": "https://www.youtube.com/watch?v=g5lHxxy-u9Y",
           "model_url": "./models/press_militar_barra.glb",
           "orbit": "0deg 90deg 4.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Ejercicio para todos los músculos del hombro. Recuerda que las rodillas no se flexionan y la barra debe quedar por arriba de la cabeza.",
           "tips": [
             {
               "name": "La barra empieza abajo del mentón",
@@ -421,7 +421,7 @@
           "video_url": "https://www.youtube.com/watch?v=Wbkz6hEq03Q&list=RDQMWOa99IyNLDA&start_radio=1",
           "model_url": "./models/vuelos_laterales.glb",
           "orbit": "0deg 90deg 0.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Ideal para todo el trabajo del deltoides lateral. Recuerda llevar los brazos en V hacia adelante con los codos levemente flexionados.",
           "tips": [
             {
               "name": "Brazos levemente flexionados",
@@ -450,7 +450,7 @@
           "video_url": "https://www.youtube.com/shorts/18yw0UJYy2o",
           "model_url": "./models/curl_biceps_mancuerna.glb",
           "orbit": "0deg 90deg 0.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Trabajo para biceps. Recorda subir rotando las mancuernas y bajar en posición supina (palmas de las manos miran para arriba) hasta estar obligado a volver a rotar.",
           "tips": [
             {
               "name": "Empezar con las manos al lado del cuerpo",
@@ -476,11 +476,11 @@
         },
         {
           "id": 14,
-          "name": "triceps en polea",
+          "name": "tríceps en polea",
           "video_url": "https://www.youtube.com/shorts/EWsq_UbGqPY",
           "model_url": "./models/triceps_poleas.glb",
           "orbit": "180deg 90deg 0.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Ideal para tríceps. Recuerda estar bien abajo de la polea y llevar las manos hacia los costados cuando bajas.",
           "tips": [
             {
               "name": "Codos pegados al cuerpo",
@@ -513,7 +513,7 @@
           "video_url": "https://www.youtube.com/watch?v=oeua30yIOF4&list=RDQMBhImIl58Qc0&start_radio=1",
           "model_url": "./models/hip_thrust.glb",
           "orbit": "0deg 90deg 4.5m",
-          "description": "Esta es una explicación de lo que trata el ejercicio y cualquier otra información relevante para quién entrena.",
+          "description": "Ejercicio ideal para los glúteos. Recuerda que la barra no toca el piso cuando bajas y al subir haz una leve pausa en la parte superior.",
           "tips": [
             {
               "name": "Poner la barra a la altura de la cintura",
