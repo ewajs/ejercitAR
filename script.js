@@ -1,5 +1,5 @@
-let modelViewer;
 document.addEventListener('DOMContentLoaded', () => {
+    let modelViewer;
     const splash = document.querySelector('.subpage.splash');
     const list = document.querySelector('.subpage.list');
     const model = document.querySelector('.subpage.model');
@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const backButton = document.querySelector('button.back');
     const helpButton = document.querySelector('button.help');
     const modelTitle = document.querySelector('h1.model-title');
+
+    function isDesktop() {
+        return window.innerWidth >= 992;
+    }
 
 
     modelViewer = document.querySelector('model-viewer');
@@ -52,15 +56,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Splash screen starts on, get data
     fetch('./exercises.json').then(res => res.json()).then(res => {
         // create category
+        const categoryClass = isDesktop() ? 'category expanded' : 'category';
         const createCategory = (category) =>  {
-            return `<section class="category">
+            return `<section class="${categoryClass}">
                         <div class="name">
                             <div>
                                 <span class="material-symbols-outlined icon">${category.icon ?? ''}</span class="name-text">${category.name}
                             </div>    
                             <span class="material-symbols-outlined control"></span>
                         </div>
-                        <div class="excercise-list">` +
+                        <div class="exercise-list">` +
                         category.exercises.reduce((acc, ex) =>{
                             return acc + `<div class="exercise">
                                             <button data-exercise="${ex.id}">
@@ -80,30 +85,56 @@ document.addEventListener('DOMContentLoaded', () => {
             return acc;
         }, {});
 
-        // Category expansion
+        // Category expansion (only for mobile)
         listContainer.querySelectorAll('.category > .name').forEach(catName => {
             const categoryElement = catName.parentElement;
-            const excerciseList = categoryElement.querySelector('.excercise-list');
-            collapseSection(excerciseList, false)
+            const exerciseList = categoryElement.querySelector('.exercise-list');
+            if (!isDesktop()) collapseSection(exerciseList, false); // Do not collapse on desktop
             catName.addEventListener('click', () => {
+                if (isDesktop()) return; // Do nothing on desktop
                 // Close other expanded category if present
                 const other = listContainer.querySelector('.category.expanded')
                 if (other !== null && other !== categoryElement) {
                     other.classList.remove('expanded');
-                    collapseSection(other.querySelector('.excercise-list'));
+                    collapseSection(other.querySelector('.exercise-list'));
                 } 
                 // Toggle myself
                 const isCollapsed = !categoryElement.classList.contains('expanded');
                 categoryElement.classList.toggle('expanded');
                 if(isCollapsed) {
-                    expandSection(excerciseList)
+                    expandSection(exerciseList)
                 } else {
-                    collapseSection(excerciseList)
+                    collapseSection(exerciseList)
                 }
                 
                 
             })
         });
+
+
+        let currentViewportIsDesktop = isDesktop();
+        // Handles switching over to Mobile 
+        window.addEventListener('resize', () => {
+            if ((isDesktop() && currentViewportIsDesktop) || (!isDesktop() && !currentViewportIsDesktop)) return; // No change
+
+            if (isDesktop()) {
+                console.log("Switching to Desktop");
+                listContainer.querySelectorAll('.category:not(.expanded)').forEach(c => { 
+                    console.log("Expanding");
+                    c.classList.add('expanded');
+                    expandSection(c.querySelector('.exercise-list'));
+                });
+            } else {
+                console.log("Switching to Mobile");
+                listContainer.querySelectorAll('.category.expanded').forEach(c => {
+                    console.log("Collapsing");
+                    c.classList.remove('expanded')
+                    collapseSection(c.querySelector('.exercise-list'));
+                });
+            }
+            
+            currentViewportIsDesktop = isDesktop();
+        })
         
         // Exercise selection 
         listContainer.querySelectorAll('button').forEach(btn => {
