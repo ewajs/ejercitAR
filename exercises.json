@@ -65,23 +65,23 @@
           "tips": [
             {
               "name": "Rodilla alineada con pie",
-              "coordinates": null
+              "coordinates": "0 0 415 416 420 0.679 0.022 0.299"
             },
             {
               "name": "Mentón arriba",
-              "coordinates": {}
+              "coordinates": "0 0 7046 204 203 0.208 0.343 0.449"
             },
             {
               "name": "Saco pecho",
-              "coordinates": {}
+              "coordinates": "0 0 8148 8151 8150 0.216 0.465 0.319"
             },
             {
               "name": "Saco cola",
-              "coordinates": {}
+              "coordinates": "0 0 9572 9575 9574 0.121 0.743 0.135"
             },
             {
               "name": "Bajo hasta que la rodilla se aproxima al piso lo más posible",
-              "coordinates": {}
+              "coordinates": "0 0 8359 8363 8362 0.456 0.247 0.297"
             }
           ]
         }
@@ -102,31 +102,31 @@
           "tips": [
             {
               "name": "Pies en ancho de hombros y las manos por fuera de las piernas",
-              "coordinates": null
+              "coordinates": "1 0 2519 1868 1862 0.169 0.332 0.499"
             },
             {
               "name": "Bajo bien la cola",
-              "coordinates": {}
+              "coordinates": "1 0 9031 9032 9566 0.863 0.028 0.110"
             },
             {
               "name": "Levanto lo hombros",
-              "coordinates": {}
+              "coordinates": "1 0 1062 1065 1064 0.339 0.225 0.437"
             },
             {
               "name": "Saco pecho",
-              "coordinates": {}
+              "coordinates": "1 0 7084 8148 219 0.391 0.564 0.044"
             },
             {
               "name": "Saco cola",
-              "coordinates": {}
+              "coordinates": "1 0 2882 2884 2883 0.363 0.631 0.006"
             },
             {
               "name": "Subo pecho y hombros de manera coordinada",
-              "coordinates": {}
+              "coordinates": "1 0 12195 12192 7895 0.066 0.530 0.404"
             },
             {
               "name": "Retengo el aire toda la subida",
-              "coordinates": {}
+              "coordinates": "1 0 8165 8167 230 0.840 0.026 0.134"
             }
           ]
         },
@@ -140,35 +140,35 @@
           "tips": [
             {
               "name": "Piernas separadas y pies mirando para afuera",
-              "coordinates": null
+              "coordinates": "0 0 2517 2518 6618 0.035 0.569 0.396"
             },
             {
               "name": "Agarre en ancho de hombros",
-              "coordinates": {}
+              "coordinates": "0 0 14176 14114 14173 0.415 0.297 0.288"
             },
             {
               "name": "Bajo bien la cola",
-              "coordinates": {}
+              "coordinates": "0 0 7095 1008 1007 0.364 0.401 0.235"
             },
             {
               "name": "Levanto lo hombros",
-              "coordinates": {}
+              "coordinates": "0 0 3489 3492 3490 0.465 0.410 0.125"
             },
             {
               "name": "Saco pecho",
-              "coordinates": {}
+              "coordinates": "0 0 7083 8146 8145 0.270 0.093 0.637"
             },
             {
               "name": "Saco cola",
-              "coordinates": {}
+              "coordinates": "0 0 2896 3243 289 0.175 0.339 0.486"
             },
             {
               "name": "Subo pecho y hombros de manera coordinada",
-              "coordinates": {}
+              "coordinates": "0 0 11808 11809 11811 0.684 0.1 0.235"
             },
             {
               "name": "Retengo el aire toda la subida",
-              "coordinates": {}
+              "coordinates": "0 0 8160 7051 227 0.029 0.859 0.112"
             }
           ]
         },
@@ -182,31 +182,31 @@
           "tips": [
             {
               "name": "Pies ancho de hombros y la manos por fuera de la piernas",
-              "coordinates": null
+              "coordinates": "1 0 1861 1863 1862 0.475 0.022 0.503"
             },
             {
               "name": "Dejo la cola levemente arriba y las rodillas levemente flexionadas",
-              "coordinates": {}
+              "coordinates": "1 0 9031 9566 15644 0.167 0.070 0.764"
             },
             {
               "name": "Saco pecho",
-              "coordinates": {}
+              "coordinates": "1 0 8148 8151 8150 0.102 0.130 0.768"
             },
             {
               "name": "Saco cola",
-              "coordinates": {}
+              "coordinates": "1 0 2878 7555 7556 0.658 0.076 0.266"
             },
             {
               "name": "Espalda derecha",
-              "coordinates": {}
+              "coordinates": "1 0 9064 9066 7064 0.458 0.078 0.464"
             },
             {
               "name": "Subo pecho y hombros de manera coordinada",
-              "coordinates": {}
+              "coordinates": "1 0 12183 12185 12184 0.269 0.374 0.357"
             },
             {
               "name": "Retengo el aire toda la subida",
-              "coordinates": {}
+              "coordinates": "1 0 8165 8168 8167 0.891 0.085 0.024"
             }
           ]
         }
@@ -227,39 +227,39 @@
           "tips": [
             {
               "name": "Pies bien apretados contra el piso",
-              "coordinates": null
+              "coordinates": "1 0 1983 104 775 0.218 0.114 0.668"
             },
             {
               "name": "Gluteos apretados",
-              "coordinates": {}
+              "coordinates": "1 0 3246 2891 2884 0.493 0.314 0.192"
             },
             {
-              "name": "Espalda bajo bien curva y sin tocar el banco",
-              "coordinates": {}
+              "name": "Espalda baja bien curva y sin tocar el banco",
+              "coordinates": "1 0 3593 1443 1444 0.034 0.235 0.731"
             },
             {
               "name": "Saco pecho",
-              "coordinates": {}
+              "coordinates": "1 0 8152 8154 222 0.723 0.193 0.084"
             },
             {
               "name": "Agarre más amplio que los hombros",
-              "coordinates": {}
+              "coordinates": "1 0 5238 6493 5990 0.488 0.382 0.131"
             },
             {
               "name": "En el rack la barra tiene que estar arriba de los ojos",
-              "coordinates": {}
+              "coordinates": "1 0 1140 194 1142 0.096 0.681 0.223"
             },
             {
               "name": "Una vez en el aire la barra inicio a la altura del cuello",
-              "coordinates": {}
+              "coordinates": "1 0 8130 7354 7334 0.102 0.085 0.814"
             },
             {
               "name": "La barra realiza parábola hasta tocar suave el linea por debajo del pectoral",
-              "coordinates": {}
+              "coordinates": "2 3 15330 15012 15014 0.507 0.298 0.195"
             },
             {
               "name": "La barra sube de manera explosiva en parábola hasta la altura de cuello",
-              "coordinates": {}
+              "coordinates": "2 3 4478 4479 4476 0.457 0.494 0.048"
             }
           ]
         },
