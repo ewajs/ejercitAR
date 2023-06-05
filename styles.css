@@ -261,7 +261,6 @@
     border-top-right-radius: 15px;
     background-color: white;
     color: #04ac9c;
-    transition: bottom 1s ease-in-out;
     cursor: pointer;
 }
 
@@ -270,7 +269,7 @@
 }
 
 .subpage.model > .content.expanded > .tab {
-    bottom: 300px;
+    bottom: 450px;
 }
 
 .subpage.model > .content.expanded > .tab > .less {
@@ -284,8 +283,8 @@
 .subpage.model > .content > .info {
     position: absolute;
     width: 100%;
-    height: 300px;
-    bottom: -300px;
+    height: 450px;
+    bottom: -450px;
     z-index: 10;
     border-top: 2px solid #b0e8e3;
     border-right: 2px solid #b0e8e3;
@@ -293,22 +292,45 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;   
     background-color: white;
-    color: #04ac9c;
-    transition: bottom 1s ease-in-out;
+    color: #04ac9c;  
     overflow-y: scroll;
     box-sizing: border-box;
     padding: 10px;
 }
 
+/* Animate only when open */
+.subpage.model.open > .content > .info,
+.subpage.model.open > .content > .tab {
+    transition: bottom 0.7s ease-in-out;
+}
+
+.subpage.model > .content.no-embed > .info {
+    height: 300px;
+    bottom: -300px;
+}
+
+.subpage.model > .content.expanded.no-embed > .tab {
+    bottom: 300px;
+}
+
+.subpage.model > .content > .info > .video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.subpage.model > .content.no-embed > .info > .video-container {
+    justify-content: flex-start;
+}
+
 .subpage.model > .content > .info > h1,
-.subpage.model > .content > .info > a {
+.subpage.model > .content > .info > .video-container > a {
     font-size: 22px;
     margin-bottom: 10px;
     display: block;
     text-decoration: none;
     color: #04ac9c;
 }
-.subpage.model > .content > .info > a {
+.subpage.model > .content > .info > .video-container > a {
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -348,6 +370,18 @@
     border-radius: 3px;
     border: 2px solid #b0e8e3;
     vertical-align: middle;
+}
+
+/* VIDEO FORMATTING IN MODEL PAGE  */
+#video_link.hide,
+#video_embed.hide {
+    display: none;
+}
+
+#video_embed {
+    height: 350px;
+    width: 100%;
+    margin: 10px 0;
 }
 
 @media only screen and (min-width: 992px) {
@@ -397,4 +431,24 @@
     .subpage.list > .list-container > .category > .exercise-list > .exercise > button > .material-symbols-outlined {
         display: none;
     }
+
+    /* VIDEO FORMATTING IN MODEL PAGE  */
+    #video_embed {
+        height: 600px;
+        max-width: 1000px;
+    }
+
+    .subpage.model > .content > .info {
+        height: 650px;
+        bottom: -650px;
+    }
+
+    .subpage.model > .content.expanded > .info {
+        bottom: 0;
+    }
+
+    .subpage.model > .content.expanded > .tab {
+        bottom: 650px;
+    }
+    
 }

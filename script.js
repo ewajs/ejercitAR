@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const modelPageTab = modelPageContent.querySelector('.tab')
     const tipDisplayToggle = modelPageContent.querySelector('.tip-display-toggle');
     const exerciseDescription = modelPageContent.querySelector('.description');
-    const exerciseVideo = modelPageContent.querySelector('#video');
+    const exerciseVideoContainer = modelPageContent.querySelector('.video-container');
+    const exerciseVideoEmbed = exerciseVideoContainer.querySelector('#video_embed')
+    const exerciseVideoLink = exerciseVideoContainer.querySelector('#video_link');
     const exerciseTips = modelPageContent.querySelector('.tip-list');
     const exerciseTipsTitle = modelPageContent.querySelector('.tip-title');
     const backButton = document.querySelector('button.back');
@@ -145,10 +147,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 modelTitle.innerText = exercise.name;
                 exerciseDescription.innerText = exercise.description;
                 if (exercise.video_url) {
-                    exerciseVideo.href = exercise.video_url;
-                    exerciseVideo.classList.remove('hide');
+                    if (exercise.embed_video) { // Link or Embed
+                        // Try parsing the URL and getting the v argument, if it fails, default to videoLink.
+                        try {
+                            const url = new URL(exercise.video_url);
+                            const videoID = url.searchParams.get('v');
+                            if(!videoID) throw new Error('Youtube VideoID (v param) not found!');
+                            configureVideoEmbed(videoID);
+                        } catch (err) {
+                            console.error('ERROR! Could not set up YouTube embed!')
+                            console.error(err);
+                            configureVideoLink(exercise.video_url); // Default to video link if set up failed
+                        }
+                    } else {
+                        configureVideoLink(exercise.video_url);
+                    }
+                   
+                    exerciseVideoContainer.classList.remove('hide');
                 } else {
-                    exerciseVideo.classList.add('hide');
+                    exerciseVideoContainer.classList.add('hide');
                 }
                 if (exercise.tips.length > 0){ 
                     exerciseTips.innerHTML = exercise.tips.reduce((acc, tip) => acc + `<li>${tip.name}</li>`, '');
@@ -168,6 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Back button
     backButton.addEventListener('click', () => {
         modelPageContent.classList.remove('expanded');
+        modelPageContent.classList.remove('no-embed');
         model.classList.remove('open');
         list.classList.add('open');
     });
@@ -241,5 +259,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // mark the section as "currently not collapsed"
         element.setAttribute('data-collapsed', 'false');
     }
-  
+    
+
+    function configureVideoLink(videoURL) {
+        exerciseVideoLink.href = videoURL;
+        exerciseVideoEmbed.classList.add('hide');
+        exerciseVideoLink.classList.remove('hide');
+        modelPageContent.classList.add('no-embed');
+    }
+
+    function configureVideoEmbed(videoID) {
+        exerciseVideoEmbed.src  = `https://www.youtube.com/embed/${videoID}`;
+        exerciseVideoLink.classList.add('hide');
+        exerciseVideoEmbed.classList.remove('hide');
+        modelPageContent.classList.remove('no-embed');
+    }
 });
