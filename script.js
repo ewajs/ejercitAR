@@ -7,25 +7,22 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error: Exersie ID not specified! Aborting');
         return;
     }
-    setTimeout(() => {
-        fetch('./exercises.json').then(res => res.json()).then(res => {
-            // Get our list of exercises from the data.
-            const exercises = res.categories.reduce((acc, cat) => acc.concat(cat.exercises), []);    
-            const exercise = exercises.find(ex => ex.id == params.get('ex_id'));
-            if (!exercise) {
-                console.error('Error: Exercise ID not found! Aborting');
-                return;
-            }
-            setUpPage(exercise);
-            trackLoad(exercise);
-            console.log("Load");
-        });
-
+   
+    fetch('./exercises.json').then(res => res.json()).then(res => {
+        // Get our list of exercises from the data.
+        const exercises = res.categories.reduce((acc, cat) => acc.concat(cat.exercises), []);    
+        const exercise = exercises.find(ex => ex.id == params.get('ex_id'));
+        if (!exercise) {
+            console.error('Error: Exercise ID not found! Aborting');
+            return;
+        }
+        setUpPage(exercise);
+        trackLoad(exercise);
+        console.log("Load");
         // Show the list screen & lift the splash screen
         splash.classList.remove('open');
         model.classList.add('open');
-    }, 2000)
-    
+    });
 });
 
 // Page Setup
