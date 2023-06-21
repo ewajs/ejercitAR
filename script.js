@@ -74,15 +74,15 @@ function setUpComponents(exercise) {
     const modelTitle = document.querySelector('h1.model-title');
     const modelViewer = document.querySelector('model-viewer');
 
-    function configureVideoLink(video_url) {
-        exerciseVideoLink.href = video_url;
+    function configureVideoLink() {
+        exerciseVideoLink.href = exercise.video_url;
         exerciseVideoEmbed.classList.add('hide');
         exerciseVideoLink.classList.remove('hide');
         modelPageContent.classList.add('no-embed');
     }
 
-    function configureVideoEmbed(video_url) {
-        const url = new URL(video_url);
+    function configureVideoEmbed() {
+        const url = new URL(exercise.video_url);
         const videoID = url.searchParams.get('v');
         if(!videoID) throw new Error('Youtube VideoID (v param) not found!');
 
@@ -99,14 +99,14 @@ function setUpComponents(exercise) {
         if (exercise.embed_video) { // Link or Embed
             // Try parsing the URL and getting the v argument, if it fails, default to videoLink.
             try {
-                configureVideoEmbed(exercise.video_url);
+                configureVideoEmbed();
             } catch (err) {
                 console.error('ERROR! Could not set up YouTube embed!')
                 console.error(err);
-                configureVideoLink(exercise.video_url); // Default to video link if set up failed
+                configureVideoLink(); // Default to video link if set up failed
             }
         } else {
-            configureVideoLink(exercise.video_url);
+            configureVideoLink();
         }
         
         exerciseVideoContainer.classList.remove('hide');
@@ -121,7 +121,13 @@ function setUpComponents(exercise) {
         tipDisplayToggle.classList.add('hide');
     }
 
-    modelPageTab.addEventListener('click', () => modelPageContent.classList.toggle('expanded'));
+    modelPageTab.addEventListener('click', () => {
+        modelPageContent.classList.toggle('expanded');
+        if (modelPageContent.classList.contains('expanded')) trackInfoView(exercise);
+    });
+
+    document.querySelector('.ar-button').addEventListener('click', () => trackARView(exercise));
+
     tipDisplayToggle.addEventListener('click', () => {
         tipDisplayToggle.classList.toggle('active');
         modelViewer.classList.toggle('show-hotspots');
@@ -138,11 +144,22 @@ function trackLoad(exercise) {
     trackGAEvent('exercise_load', {id, name});
 }
 
+function trackInfoView(exercise) {
+    const {id, name} = exercise;
+    trackGAEvent('info_view', {id, name});
+}
+
+function trackARView(exercise) {
+    const {id, name} = exercise;
+    trackGAEvent('ar_view', {id, name});
+}
+
 function trackTipView(exercise, tip) {
     const {id, name} = exercise;
     trackGAEvent('tip_view', {id, name, tip_name: tip.name});
 }
 
 function trackGAEvent(name, params) {
+    console.log(`Tracking event: ${name} - with params: ${JSON.stringify(params)}`);
     gtag('event', name, params);
 }
