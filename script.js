@@ -25,6 +25,73 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+function launchTimer(config) {
+    const INTERVAL_PERIOD = 1000;
+    const {phases, repetitions} = config;
+    const timer = document.querySelector('.timer-overlay');
+    const phaseName = timer.querySelector('.phase > .phase-name');
+    const phaseTime = timer.querySelector('.phase > .phase-time')
+    const tick = new Audio('/audio/tick.mp3');
+    const phaseEnd = new Audio('/audio/phase_end.mp3');
+    const repetitionEnd = new Audio('/audio/repetition_end.mp3');
+    const seriesEnd = new Audio('/audio/series_end.mp3');
+    timer.classList.add('active', 'pulse');
+    let currentRep = 0;
+    let currentPhase = 0;
+    let currentTick = 0;
+
+    function setPhase() {
+        phaseName.innerText = phases[currentPhase].name;
+        phaseTime.innerText = phases[currentPhase].duration - currentTick;
+    }
+
+    setPhase();
+
+    let interval = setInterval(() => {
+        currentTick += 1;
+        // Check for events in order of priority
+        // Phase End
+        if(phases[currentPhase].duration === currentTick) {
+            currentTick = 0;
+            currentPhase += 1;
+            // Repetition End
+            if (currentPhase === phases.length) {
+                currentPhase = 0;
+                currentRep += 1;
+                // Series end, stop the timer
+                if (currentRep === repetitions) {
+                    clearInterval(interval);
+                    timer.classList.remove('active', 'pulse');
+                    console.log("Series End!");
+                    seriesEnd.play();
+                    return;
+                }
+                console.log("Repetition End!");
+                repetitionEnd.play();
+                return;
+            }
+            console.log("Phase End!");
+            phaseEnd.play();
+            return;
+        }
+        switch(phases[currentPhase].style) {
+            default:
+            case "all":
+                timer.classList.remove('child-pulse');
+                timer.classList.toggle('pulse');
+                break;
+            case "children":
+                timer.classList.add('child-pulse');
+                timer.querySelectorAll('.phase, .stop').forEach(child => child.classList.toggle('pulse'));
+                break;
+        }
+        console.log("Tick!");
+        setPhase();
+        tick.play();
+    }, INTERVAL_PERIOD);
+    
+}
+
 // Page Setup
 function loadModelViewer(exercise) {
     const modelViewer = document.querySelector('model-viewer');
@@ -87,7 +154,6 @@ function setUpComponents(exercise) {
         exerciseVideoLink.classList.add('hide');
         exerciseVideoEmbed.classList.remove('hide');
         modelPageContent.classList.remove('no-embed');
-        exerciseVideoEmbed.addEventListener('click')
     }
 
     modelTitle.innerText = exercise.name;
