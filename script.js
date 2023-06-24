@@ -224,10 +224,10 @@ function setUpComponents(exercise, timerConfig) {
 
     timerInfo.addEventListener('click', () => {
         // Load now in secure scope
-        tick = new Audio('/audio/tick.mp3');
-        phaseEnd = new Audio('/audio/phase_end.mp3');
-        repetitionEnd = new Audio('/audio/repetition_end.mp3');
-        seriesEnd = new Audio('/audio/series_end.mp3');
+        tick = new Audio('./audio/tick.mp3');
+        phaseEnd = new Audio('./audio/phase_end.mp3');
+        repetitionEnd = new Audio('./audio/repetition_end.mp3');
+        seriesEnd = new Audio('./audio/series_end.mp3');
         Swal.fire({
             title: 'Tiempos y Repeticiones',
             html: timerInfoHTML,
