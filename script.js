@@ -149,10 +149,11 @@ function setUpComponents(exercise, timerConfig) {
     // Timer Setup abort if timerConfig not set
     if (!timerConfig) return;
     // Configure and set visibility
-    const tick = new Audio('/audio/tick.mp3');
-    const phaseEnd = new Audio('/audio/phase_end.mp3');
-    const repetitionEnd = new Audio('/audio/repetition_end.mp3');
-    const seriesEnd = new Audio('/audio/series_end.mp3');
+    // Declare now and populate in secure 'click' scope.
+    let tick;
+    let phaseEnd;
+    let repetitionEnd;
+    let seriesEnd;
     const INTERVAL_PERIOD = 1000;
     const timer = document.querySelector('.timer-overlay');
     const timerInfo = modelPageContent.querySelector('.timer-info');
@@ -221,20 +222,26 @@ function setUpComponents(exercise, timerConfig) {
 
     const timerInfoHTML = '<p>' + timerConfig.phases.reduce((acc, curr) => `${acc}${curr.name}: ${curr.duration} s<br/>`, '') + `<br/>Repeticiones: ${timerConfig.repetitions}` + '</p>';
 
-    timerInfo.addEventListener('click', () => Swal.fire({
-        title: 'Tiempos y Repeticiones',
-        html: timerInfoHTML,
-        color: '#04ac9c',
-        iconHtml: '<span class="material-symbols-outlined">timer</span>',
-        customClass: {icon: 'large', title: 'cy-swal2-title', confirmButton: 'cy-swal2-confirm'},
-        iconColor: '#04ac9c',
-        confirmButtonText: 'TIMER',
-        showCancelButton: true,
-        cancelButtonText: 'OK'
-    }).then(res => {
-        if (res.isConfirmed) launchTimer();
-    })
-    );
+    timerInfo.addEventListener('click', () => {
+        // Load now in secure scope
+        tick = new Audio('/audio/tick.mp3');
+        phaseEnd = new Audio('/audio/phase_end.mp3');
+        repetitionEnd = new Audio('/audio/repetition_end.mp3');
+        seriesEnd = new Audio('/audio/series_end.mp3');
+        Swal.fire({
+            title: 'Tiempos y Repeticiones',
+            html: timerInfoHTML,
+            color: '#04ac9c',
+            iconHtml: '<span class="material-symbols-outlined">timer</span>',
+            customClass: {icon: 'large', title: 'cy-swal2-title', confirmButton: 'cy-swal2-confirm'},
+            iconColor: '#04ac9c',
+            confirmButtonText: 'TIMER',
+            showCancelButton: true,
+            cancelButtonText: 'OK'
+        }).then(res => {
+            if (res.isConfirmed) launchTimer();
+        });
+    });
 }
 
 function setUpPage(exercise, timerConfig) {
