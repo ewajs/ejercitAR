@@ -121,8 +121,7 @@
 .subpage.model > .content > .tip-display-toggle {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 120px;
     height: 40px;
     width: 40px;
     z-index: 5;
@@ -143,6 +142,30 @@
 .subpage.model > .content > .tip-display-toggle.active {
     background-color: #04ac9c;
     color: white;
+}
+
+.subpage.model > .content > .timer-info {
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #b0e8e3;
+    border-right: 2px solid #b0e8e3;
+    border-left: 2px solid #b0e8e3;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: white;
+    color: #04ac9c;
+    cursor: pointer;
+}
+
+.subpage.model > .content > .timer-info.hide {
+    display: none;
 }
 
 .subpage.model > .content > .tab {
@@ -273,6 +296,14 @@
     vertical-align: middle;
 }
 
+.swal2-icon.large {
+    border: none;
+}
+
+.swal2-icon.large .material-symbols-outlined{
+    font-size: 70px;
+}
+
 /* VIDEO FORMATTING IN MODEL PAGE  */
 #video_link.hide,
 #video_embed.hide {
@@ -311,11 +342,11 @@
 }
 
 .timer-overlay > *:first-child {
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .timer-overlay > *:last-child {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 
@@ -338,6 +369,25 @@
     transition: color 0.8s linear;
 }
 
+.timer-overlay > .phase > .phase-name {
+    font-size: 60px;
+}
+
+.timer-overlay > .phase > .phase-rep {
+    font-size: 30px;
+}
+
+
+@keyframes beating {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(0.8); }
+}
+
+.timer-overlay.active > .phase.beat {
+    animation: 1s ease 0s infinite beating;
+    text-transform: lowercase;
+}
+
 .timer-overlay.active.pulse > .phase {
     color: #04ac9c;
 }
@@ -355,36 +405,13 @@
     border: none;
     letter-spacing: 2px;
     transition: color 0.8s linear, background-color 0.8s linear;
+    cursor: pointer;
 }
 
 .timer-overlay.active.pulse > .stop {
     background-color: #04ac9c;
     color: white;
 }
-
-.timer-overlay.active.child-pulse {
-    transition: background-color 0.2s linear;
-    background-color: #d8fffb;
-}
-
-.timer-overlay.active.child-pulse > .phase.pulse {
-    color: white;
-}
-
-.timer-overlay.active.child-pulse > .stop.pulse {
-    color: #04ac9c;
-    background-color: white;
-}
-
-@keyframes beat {
-    0%, 50%, 100% { font-size: 100px; }
-    30%, 80% { transform: 60px; }
-}
-
-.timer-overlay.active > .phase > .phase-time {
-    animation: 1s ease 0s infinite beat;
-}
-
 
 
 
@@ -455,8 +482,13 @@
         bottom: 650px;
     }
 
-    .timer-overlay.active > .phase {
+    .timer-overlay > .phase > .phase-name {
+        font-size: 100px;
+    }
+
+    .timer-overlay > .phase > .phase-rep {
         font-size: 60px;
     }
+    
     
 }

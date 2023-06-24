@@ -7,6 +7,23 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error: Exersie ID not specified! Aborting');
         return;
     }
+    let timerConfig = false;
+    // If rise or fall time specified then there's a timer
+    if (params.has('tf') || params.has('tr')) {
+        // Default to 1 repetition if none specified
+        timerConfig = {phases: [], repetitions: params.has('nr') ? parseInt(params.get('nr')) : 1 };
+        let upStint = [], downStint = [], rest = [];
+        if (params.has('tr')) upStint.push({duration: parseInt(params.get('tr')), name: 'Subida', pulse: true});
+        if (params.has('tu')) upStint.push({duration: parseInt(params.get('tu')), name: 'Pausa', pulse: false});
+        if (params.has('tf')) downStint.push({duration: parseInt(params.get('tf')), name: 'Bajada', pulse: true});
+        if (params.has('td')) downStint.push({duration: parseInt(params.get('td')), name: 'Pausa', pulse: false});
+        if (params.has('tw')) rest.push({duration: parseInt(params.get('tw')), name: 'Descanso', pulse: false});
+        if (params.has('to') && params.get('to') === 'i') {// Timer inverted frist we go down then up
+            timerConfig.phases = [...downStint, ...upStint, ...rest];
+        } else { // Regular order first up then down
+            timerConfig.phases = [...upStint, ...downStint, ...rest];
+        }
+    }
    
     fetch('./exercises.json').then(res => res.json()).then(res => {
         // Get our list of exercises from the data.
@@ -16,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error: Exercise ID not found! Aborting');
             return;
         }
-        setUpPage(exercise);
+        setUpPage(exercise, timerConfig);
         trackLoad(exercise);
         console.log("Load");
         // Show the list screen & lift the splash screen
@@ -24,73 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
         model.classList.add('open');
     });
 });
-
-function launchTimer(config) {
-    const INTERVAL_PERIOD = 1000;
-    const {phases, repetitions} = config;
-    const timer = document.querySelector('.timer-overlay');
-    const phaseName = timer.querySelector('.phase > .phase-name');
-    const phaseTime = timer.querySelector('.phase > .phase-time')
-    const tick = new Audio('/audio/tick.mp3');
-    const phaseEnd = new Audio('/audio/phase_end.mp3');
-    const repetitionEnd = new Audio('/audio/repetition_end.mp3');
-    const seriesEnd = new Audio('/audio/series_end.mp3');
-    timer.classList.add('active', 'pulse');
-    let currentRep = 0;
-    let currentPhase = 0;
-    let currentTick = 0;
-
-    function setPhase() {
-        phaseName.innerText = phases[currentPhase].name;
-        phaseTime.innerText = phases[currentPhase].duration - currentTick;
-    }
-
-    setPhase();
-
-    let interval = setInterval(() => {
-        currentTick += 1;
-        // Check for events in order of priority
-        // Phase End
-        if(phases[currentPhase].duration === currentTick) {
-            currentTick = 0;
-            currentPhase += 1;
-            // Repetition End
-            if (currentPhase === phases.length) {
-                currentPhase = 0;
-                currentRep += 1;
-                // Series end, stop the timer
-                if (currentRep === repetitions) {
-                    clearInterval(interval);
-                    timer.classList.remove('active', 'pulse');
-                    console.log("Series End!");
-                    seriesEnd.play();
-                    return;
-                }
-                console.log("Repetition End!");
-                repetitionEnd.play();
-                return;
-            }
-            console.log("Phase End!");
-            phaseEnd.play();
-            return;
-        }
-        switch(phases[currentPhase].style) {
-            default:
-            case "all":
-                timer.classList.remove('child-pulse');
-                timer.classList.toggle('pulse');
-                break;
-            case "children":
-                timer.classList.add('child-pulse');
-                timer.querySelectorAll('.phase, .stop').forEach(child => child.classList.toggle('pulse'));
-                break;
-        }
-        console.log("Tick!");
-        setPhase();
-        tick.play();
-    }, INTERVAL_PERIOD);
-    
-}
 
 // Page Setup
 function loadModelViewer(exercise) {
@@ -125,7 +75,7 @@ function loadModelViewer(exercise) {
     });
 }
 
-function setUpComponents(exercise) {
+function setUpComponents(exercise, timerConfig) {
     const modelPageContent =  document.querySelector('.subpage.model > .content');
     const modelPageTab = modelPageContent.querySelector('.tab')
     const tipDisplayToggle = modelPageContent.querySelector('.tip-display-toggle');
@@ -195,11 +145,101 @@ function setUpComponents(exercise) {
         tipDisplayToggle.classList.toggle('active');
         modelViewer.classList.toggle('show-hotspots');
     });
+
+    // Timer Setup abort if timerConfig not set
+    if (!timerConfig) return;
+    // Configure and set visibility
+    const tick = new Audio('/audio/tick.mp3');
+    const phaseEnd = new Audio('/audio/phase_end.mp3');
+    const repetitionEnd = new Audio('/audio/repetition_end.mp3');
+    const seriesEnd = new Audio('/audio/series_end.mp3');
+    const INTERVAL_PERIOD = 1000;
+    const timer = document.querySelector('.timer-overlay');
+    const timerInfo = modelPageContent.querySelector('.timer-info');
+    const phaseName = timer.querySelector('.phase > .phase-name');
+    const phaseRep = timer.querySelector('.phase > .phase-rep');
+    const phaseTime = timer.querySelector('.phase > .phase-time')
+    const timerStop = timer.querySelector('.stop');
+
+    timerInfo.classList.remove('hide');
+
+    function launchTimer() {
+        const {phases, repetitions} = timerConfig;
+        timer.classList.add('active', 'pulse');
+        let currentRep = 0;
+        let currentPhase = 0;
+        let currentTick = 0;
+        let interval
+    
+        function setPhase() {
+            phaseName.innerText = phases[currentPhase].name;
+            phaseRep.innerText = `Repetición ${currentRep + 1}`;
+            phaseTime.innerText = phases[currentPhase].duration - currentTick;
+        }
+    
+        setPhase();
+    
+        function cancelTimer() { 
+            clearInterval(interval);
+            timer.classList.remove('active', 'pulse');
+            timerStop.removeEventListener('click', cancelTimer); 
+        }
+    
+        timerStop.addEventListener('click', cancelTimer);
+    
+        interval = setInterval(() => {
+            currentTick += 1;
+            // Check for events in order of priority
+            // Phase End
+            if(phases[currentPhase].duration === currentTick) {
+                currentTick = 0;
+                currentPhase += 1;
+                // Repetition End
+                if (currentPhase === phases.length) {
+                    currentPhase = 0;
+                    currentRep += 1;
+                    // Series end, stop the timer
+                    if (currentRep === repetitions) {
+                        cancelTimer();
+                        seriesEnd.play();
+                        return;
+                    }
+                    setPhase();
+                    repetitionEnd.play();
+                    return;
+                }
+                setPhase();
+                phaseEnd.play();
+                return;
+            }
+            // Pulse the UI if required
+            if(phases[currentPhase].pulse) timer.classList.toggle('pulse');
+            setPhase();
+            tick.play();
+        }, INTERVAL_PERIOD);
+    }
+
+    const timerInfoHTML = '<p>' + timerConfig.phases.reduce((acc, curr) => `${acc}${curr.name}: ${curr.duration} s<br/>`, '') + `<br/>Repeticiones: ${timerConfig.repetitions}` + '</p>';
+
+    timerInfo.addEventListener('click', () => Swal.fire({
+        title: 'Tiempos y Repeticiones',
+        html: timerInfoHTML,
+        color: '#04ac9c',
+        iconHtml: '<span class="material-symbols-outlined">timer</span>',
+        customClass: {icon: 'large', title: 'cy-swal2-title', confirmButton: 'cy-swal2-confirm'},
+        iconColor: '#04ac9c',
+        confirmButtonText: 'TIMER',
+        showCancelButton: true,
+        cancelButtonText: 'OK'
+    }).then(res => {
+        if (res.isConfirmed) launchTimer();
+    })
+    );
 }
 
-function setUpPage(exercise) {
+function setUpPage(exercise, timerConfig) {
     loadModelViewer(exercise);
-    setUpComponents(exercise);
+    setUpComponents(exercise, timerConfig);
 }
 
 function trackLoad(exercise) {
