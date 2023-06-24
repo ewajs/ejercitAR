@@ -48,6 +48,7 @@
     display: flex;
     flex-direction: column;
     right: -100vw;
+    z-index: 1;
 }
 
 .subpage.model > nav {
@@ -120,8 +121,7 @@
 .subpage.model > .content > .tip-display-toggle {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 120px;
     height: 40px;
     width: 40px;
     z-index: 5;
@@ -142,6 +142,30 @@
 .subpage.model > .content > .tip-display-toggle.active {
     background-color: #04ac9c;
     color: white;
+}
+
+.subpage.model > .content > .timer-info {
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #b0e8e3;
+    border-right: 2px solid #b0e8e3;
+    border-left: 2px solid #b0e8e3;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: white;
+    color: #04ac9c;
+    cursor: pointer;
+}
+
+.subpage.model > .content > .timer-info.hide {
+    display: none;
 }
 
 .subpage.model > .content > .tab {
@@ -272,6 +296,14 @@
     vertical-align: middle;
 }
 
+.swal2-icon.large {
+    border: none;
+}
+
+.swal2-icon.large .material-symbols-outlined{
+    font-size: 70px;
+}
+
 /* VIDEO FORMATTING IN MODEL PAGE  */
 #video_link.hide,
 #video_embed.hide {
@@ -284,6 +316,104 @@
     margin: 10px 0;
     z-index: 10;
 }
+
+.background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color:white;
+}
+
+
+.timer-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #04ac9c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer-overlay > *:first-child {
+    margin-top: 80px;
+}
+
+.timer-overlay > *:last-child {
+    margin-bottom: 80px;
+}
+
+
+.timer-overlay.active {
+    transition: background-color 0.8s linear;
+    z-index: 3;
+}
+
+.timer-overlay.active.pulse {
+    background-color:white;
+}
+
+.timer-overlay > .phase {
+    width: 100%;
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    transition: color 0.8s linear;
+}
+
+.timer-overlay > .phase > .phase-name {
+    font-size: 60px;
+}
+
+.timer-overlay > .phase > .phase-rep {
+    font-size: 30px;
+}
+
+
+@keyframes beating {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(0.8); }
+}
+
+.timer-overlay.active > .phase.beat {
+    animation: 1s ease 0s infinite beating;
+    text-transform: lowercase;
+}
+
+.timer-overlay.active.pulse > .phase {
+    color: #04ac9c;
+}
+
+.timer-overlay > .stop {
+    background-color: white;
+    color: #04ac9c;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 70px;
+    height: 80px;
+    padding: 0 30px;
+    border-radius: 40px;
+    border: none;
+    letter-spacing: 2px;
+    transition: color 0.8s linear, background-color 0.8s linear;
+    cursor: pointer;
+}
+
+.timer-overlay.active.pulse > .stop {
+    background-color: #04ac9c;
+    color: white;
+}
+
+
 
 @media only screen and (min-width: 992px) {
     .subpage.list > .list-container > .category  {
@@ -351,5 +481,14 @@
     .subpage.model > .content.expanded > .tab {
         bottom: 650px;
     }
+
+    .timer-overlay > .phase > .phase-name {
+        font-size: 100px;
+    }
+
+    .timer-overlay > .phase > .phase-rep {
+        font-size: 60px;
+    }
+    
     
 }
