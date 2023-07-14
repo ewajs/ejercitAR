@@ -541,6 +541,157 @@
           ]
         }
       ]
-    }
+    },
+    {
+      "id": 9,
+      "name": "nuevos_lio",
+      "icon": "info",
+      "exercises": [
+        {
+          "id": 17,
+          "name": "Banco inclinado con barra",
+          "video_url": null,
+          "model_url": "./models/banco_inclinado_barra.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 18,
+          "name": "Banco inclinado con mancuerna",
+          "video_url": null,
+          "model_url": "./models/banco_inclinado_mancuernas.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 19,
+          "name": "Press militar sentado con mancuernas",
+          "video_url": null,
+          "model_url": "./models/press_militar_sentado_mancuernas.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 20,
+          "name": "Jalones con agarre prono ancho",
+          "video_url": null,
+          "model_url": "./models/jalones_agarre_prono_ancho.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 21,
+          "name": "Curl de cuadriceps en máquina",
+          "video_url": null,
+          "model_url": "./models/curl_cuadriceps_maquina.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 22,
+          "name": "Curl femoral en máquina acostado",
+          "video_url": null,
+          "model_url": "./models/curl_femoral_maquina_acostado.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 23,
+          "name": "Plancha dinámica en trx",
+          "video_url": null,
+          "model_url": "./models/plancha_dinamica_trx.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 24,
+          "name": "Flexiones de brazos con las rodillas apoyadas",
+          "video_url": null,
+          "model_url": "./models/flexiones_brazos_ rodillas_apoyadas.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 25,
+          "name": "Press frances con mancuerna",
+          "video_url": null,
+          "model_url": "./models/press_frances_mancuerna.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 26,
+          "name": "Subidas al cajon con mancuernas",
+          "video_url": null,
+          "model_url": "./models/subidas_cajon_mancuernas.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 27,
+          "name": "Subidas al cajon con mancuernas",
+          "video_url": null,
+          "model_url": "./models/subidas_cajon_mancuernas.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 28,
+          "name": "Remo en maquina agarre neutro",
+          "video_url": null,
+          "model_url": "./models/remo_maquina_agarre_neutro.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 29,
+          "name": "Bicho muerto",
+          "video_url": null,
+          "model_url": "./models/bicho_muerto.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 30,
+          "name": "Crunch abdominal",
+          "video_url": null,
+          "model_url": "./models/crunch_abdominal.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 31,
+          "name": "Rueda abdominal",
+          "video_url": null,
+          "model_url": "./models/rueda_abdominal.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 32,
+          "name": "Press de pecho con mancuernas",
+          "video_url": null,
+          "model_url": "./models/press_pecho_mancuernas.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+      ]
+    },
   ]
 }
