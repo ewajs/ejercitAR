@@ -692,6 +692,76 @@
           "tips": []
         }
       ]
+    },
+    {
+      "id": 10,
+      "name": "nuevos_pej",
+      "icon": "info",
+      "exercises": [
+        {
+          "id": 33,
+          "name": "Plancha frontal",
+          "video_url": null,
+          "model_url": "./models/plancha_frontal.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 34,
+          "name": "Extensión de Gluteos con máquina",
+          "video_url": null,
+          "model_url": "./models/extension_gluteos.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 35,
+          "name": "Fondos en paralelas",
+          "video_url": null,
+          "model_url": "./models/fondos_paralelas.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 36,
+          "name": "Estocadas con mancuernas",
+          "video_url": null,
+          "model_url": "./models/estocada_mancuerna.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 37,
+          "name": "Caminata de Granjero con peso",
+          "video_url": null,
+          "model_url": "./models/farmer_walk .glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 38,
+          "name": "Apertura de pecho con mancuernas",
+          "video_url": null,
+          "model_url": "./models/apertura_de_pecho.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        },
+        {
+          "id": 39,
+          "name": "Peso muerto rumano con pesas",
+          "video_url": null,
+          "model_url": "./models/romanian_deadlift.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "bla",
+          "tips": []
+        }
+      ]
     }
   ]
 }
