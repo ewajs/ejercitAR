@@ -929,23 +929,23 @@
           "tips": [
             {
               "name": "Apoyo antebrazos y punta de los pies",
-              "coordinates": "0 0 4174 4177 4176 0.014 0.937 0.050"
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
             },
             {
               "name": "Los codos y los hombros deben estar alineados",
-              "coordinates": "0 0 12163 12165 11738 0.199 0.637 0.164"
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
             },
             {
               "name": "Meter panza y retraer gluteos",
-              "coordinates": "0 0 11557 11560 11559 0.036 0.606 0.358"
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
             },
             {
               "name": "Sostener el cuerpo alineando cadera con hombros",
-              "coordinates": "0 0 3257 3259 7442 0.610 0.000 0.390"
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
             },
             {
               "name": "Respirar lentamente",
-              "coordinates": "0 0 3569 3570 3568 0.214 0.266 0.520"
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
             }
           ]
         },
@@ -959,23 +959,23 @@
           "tips": [
             {
               "name": "Evitar el dolor lumbar",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 10916 9539 9540 0.053 0.260 0.687"
             },
             {
               "name": "Poner los cuadriceps en el borde superior de la maquina",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 10659 9647 9648 0.013 0.486 0.500"
             },
             {
               "name": "Extender omoplatos, es decir espalda curva",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 11717 9103 9104 0.149 0.595 0.256"
             },
             {
               "name": "Pera pegada al menton",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 3535 80 1342 0.183 0.617 0.200"
             },
             {
               "name": "Hacer el recorrido completo",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 3398 7508 7507 0.114 0.510 0.376"
             }
           ]
         },
@@ -989,15 +989,15 @@
           "tips": [
             {
               "name": "Alinear codo con mano",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "2 0 14132 14094 14106 0.121 0.527 0.352"
             },
             {
               "name": "Bajar mínimo hasta que el codo esté alineado con el hombro",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "2 0 12377 12378 12317 0.347 0.507 0.147"
             },
             {
               "name": "Subir con buena velocidad",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "2 0 9468 9471 9473 0.239 0.235 0.526"
             }
           ]
         },
@@ -1011,15 +1011,15 @@
           "tips": [
             {
               "name": "Espalda derecha con omoplatos retraidos",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 11673 11675 9057 0.027 0.101 0.872"
             },
             {
               "name": "Menton arriba",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 13008 8116 8114 0.070 0.060 0.870"
             },
             {
               "name": "Hacemos pasos grandes sin tocar el piso con la pierna que se adelanta",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 11167 11170 11169 0.684 0.124 0.192"
             }
           ]
         },
@@ -1033,23 +1033,23 @@
           "tips": [
             {
               "name": "Sacar pecho y poner la espalda bien derecha",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 7049 7083 216 0.252 0.330 0.418"
             },
             {
               "name": "Retener el aire",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 3312 3301 3302 0.097 0.484 0.418"
             },
             {
               "name": "Mirada al frente y mentón arriba",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 9326 9321 9312 0.071 0.182 0.747"
             },
             {
               "name": "Dar pasos lo más naturales posibles",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 9779 9781 9780 0.290 0.085 0.625"
             },
             {
               "name": "Levantar y dejar las pesas con la espalda derecha",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "1 0 1907 1906 1908 0.244 0.419 0.337"
             }
           ]
         },
@@ -1063,15 +1063,15 @@
           "tips": [
             {
               "name": "Brazos levemente flexionados",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "1 0 133 135 132 0.678 0.299 0.023"
             },
             {
               "name": "Escápulas y glúteos apretados",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "1 0 133 134 135 0.256 0.227 0.517"
             },
             {
               "name": "Bajo las mancuernas sin cambiar la flexión del codo hasta sobrepasar la linea del cuerpo",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "3 0 1930 1929 1931 0.556 0.187 0.256"
             }
           ]
         },
@@ -1085,23 +1085,23 @@
           "tips": [
             {
               "name": "Todo lento y controlado",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 2689 1566 1560 0.194 0.347 0.459"
             },
             {
               "name": "Retraer escápulas",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 11705 11707 9081 0.219 0.362 0.419"
             },  
             {
               "name": "Bajar pecho con las espalda derecha al mismo tiempo que la pierna se levanta",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 2808 1361 1362 0.729 0.197 0.074"
             },
              {
               "name": "Mantener pierna estirada",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 8339 8340 8336 0.545 0.377 0.078"
             },
             {
               "name": "Mancuernas pegadas a la pierna en todo momento",
-              "coordinates": "1 3 16029 16340 16339 0.102 0.789 0.109"
+              "coordinates": "0 0 12835 12838 12837 0.250 0.504 0.246"
             }
           ]
         }
