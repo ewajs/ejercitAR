@@ -146,8 +146,6 @@ function setUpComponents(exercise, timerConfig) {
         modelViewer.classList.toggle('show-hotspots');
     });
 
-    // Timer Setup abort if timerConfig not set
-    if (!timerConfig) return;
     // Configure and set visibility
     // Declare now and populate in secure 'click' scope.
     let tick;
@@ -162,7 +160,10 @@ function setUpComponents(exercise, timerConfig) {
     const phaseTime = timer.querySelector('.phase > .phase-time')
     const timerStop = timer.querySelector('.stop');
 
-    timerInfo.classList.remove('hide');
+    const params = new URLSearchParams(window.location.search);
+    const hasInfo = params.has('nr') || params.has('ns') || params.has('w');
+    
+    if(timerConfig || hasInfo) timerInfo.classList.remove('hide');
 
     function launchTimer() {
         const {phases, repetitions} = timerConfig;
@@ -220,7 +221,12 @@ function setUpComponents(exercise, timerConfig) {
         }, INTERVAL_PERIOD);
     }
 
-    const timerInfoHTML = '<p>' + timerConfig.phases.reduce((acc, curr) => `${acc}${curr.name}: ${curr.duration} s<br/>`, '') + `<br/>Repeticiones: ${timerConfig.repetitions}` + '</p>';
+    const timerInfoHTML = '<p>' + 
+        (timerConfig ? timerConfig.phases.reduce((acc, curr) => `${acc}${curr.name}: ${curr.duration} s<br/>`, '') : '') + 
+        (params.has('nr') ? `<br/>Repeticiones: ${params.get('nr')}` : '')+
+        (params.has('ns') ? `<br/>Series: ${params.get('ns')}` : '') + 
+        (params.has('w') ? `<br/>Peso: ${params.get('w')} kg` : '') +
+        '</p>';
 
     timerInfo.addEventListener('click', () => {
         // Load now in secure scope
@@ -228,6 +234,7 @@ function setUpComponents(exercise, timerConfig) {
         phaseEnd = new Audio('./audio/phase_end.mp3');
         repetitionEnd = new Audio('./audio/repetition_end.mp3');
         seriesEnd = new Audio('./audio/series_end.mp3');
+        const swalParams = 
         Swal.fire({
             title: 'Tiempos y Repeticiones',
             html: timerInfoHTML,
@@ -235,6 +242,7 @@ function setUpComponents(exercise, timerConfig) {
             iconHtml: '<span class="material-symbols-outlined">timer</span>',
             customClass: {icon: 'large', title: 'cy-swal2-title', confirmButton: 'cy-swal2-confirm'},
             iconColor: '#04ac9c',
+            showConfirmButton: !!timerConfig,
             confirmButtonText: 'TIMER',
             showCancelButton: true,
             cancelButtonText: 'OK'

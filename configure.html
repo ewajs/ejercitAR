@@ -24,6 +24,8 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <!-- Sweet Alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- QR Code -->
+    <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPJNCW49X0"></script>
@@ -36,6 +38,7 @@
 
       gtag("config", "G-KPJNCW49X0");
     </script>
+    <script src="configure.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -54,7 +57,6 @@
         <div class="col-md-5 panel-container model-panel">
           <div class="panel">
             <model-viewer
-              src="./models/peso_muerto_rumano.glb"
               autoplay
               ar
               ar-modes="scene-viewer quick-look"
@@ -67,25 +69,25 @@
         <div class="col-md-7 panel-container">
           <div class="panel panel-fill">
             <div class="row mb-3 align-items-center reps">
-                <div class="col-7"><input type="number" class="form-control" min="1" step="1" placeholder="Repeticiones"></div>
+                <div class="col-7"><input type="number" id="reps_input" class="form-control" min="1" step="1" placeholder="Repeticiones"></div>
                 <div class="col-1 d-flex justify-content-center"><span class="material-symbols-outlined" style="vertical-align: middle;">close</span></div>
-                <div class="col-4"><input type="number" class="form-control" min="1" step="1" placeholder="Series"></div>
+                <div class="col-4"><input type="number" id="series_input" class="form-control" min="1" step="1" placeholder="Series"></div>
             </div>
             <div class="row mb-3">
                 <div class="col">
-                    <input type="number" class="form-control" min="0" step="0.5" placeholder="Peso"/>
+                    <input type="number" id="weight_input" class="form-control" min="0" step="0.5" placeholder="Peso"/>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col">
                     <div class="input-group mb-3">
-                        <label class="input-group-text" for="rir_rpe">RIR/RPE</label>
+                        <label class="input-group-text" for="rir_rpe_select">RIR/RPE</label>
                         <select class="form-select" id="rir_rpe_select">
                           <option selected value="NONE">Ninguna</option>
                           <option value="RIR">RIR</option>
                           <option value="RPE">RPE</option>
                         </select>
-                        <input type="number" id="rir_rpe_value" class="form-control" min="1" max="10" step="1" disabled/>
+                        <input type="number" id="rir_rpe_input" class="form-control" min="1" max="10" step="1" disabled/>
                       </div>
                 </div>
             </div>
@@ -93,16 +95,16 @@
                 <div class="col"><h2 class="panel-title">Tiempos</h2></div>
             </div>
             <div class="row mb-3">
-                <div class="col-6"><input type="number" class="form-control" min="1" step="1" placeholder="Subida"/></div>
-                <div class="col-6"><input type="number" class="form-control" min="1" step="1" placeholder="Pausa"/></div>
+                <div class="col-6"><input type="number" id="up_input" class="form-control" min="1" step="1" placeholder="Subida"/></div>
+                <div class="col-6"><input type="number" id="pause_up_input" class="form-control" min="1" step="1" placeholder="Pausa Arriba"/></div>
               </div>
               <div class="row mb-3">
-                <div class="col-6"><input type="number" class="form-control" min="1" step="1" placeholder="Bajada"/></div>
-                <div class="col-6"><input type="number" class="form-control" min="1" step="1" placeholder="Descanso"/></div>
+                <div class="col-6"><input type="number" id="down_input" class="form-control" min="1" step="1" placeholder="Bajada"/></div>
+                <div class="col-6"><input type="number" id="pause_down_input" class="form-control" min="1" step="1" placeholder="Pausa Abajo"/></div>
               </div>
               <div class="row mb-3">
                 <div class="col">
-                    <input type="number" class="form-control" min="0" step="1" placeholder="Descanso entre Series"/>
+                    <input type="number" id="rest_input" class="form-control" min="0" step="1" placeholder="Descanso"/>
                 </div>
             </div>
           </div>   
@@ -111,7 +113,7 @@
       <div class="row mt-3 justify-content-end">
         <div class="col-md-7 d-flex justify-content-center"><button class="btn btn-lg btn-full generate">Generar Link</button></div>
       </div>
-      <div class="row mt-3 justify-content-end d-block d-md-none">
+      <div class="row my-3 justify-content-end d-block d-md-none">
         <div class="col-md-7 d-flex justify-content-center"><button class="btn btn-lg btn-inverted preview">Preview</button></div>
       </div>
     </div>
@@ -121,24 +123,5 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const select = document.getElementById("rir_rpe_select");
-      const input = document.getElementById("rir_rpe_value");
-      select.addEventListener("change", (e) => {
-        switch (e.target.value) {
-          case "NONE":
-            input.setAttribute("disabled", "true");
-            input.value = "";
-            input.placeholder = "";
-            return;
-          case "RIR":
-          case "RPE":
-            input.removeAttribute("disabled");
-            input.value = "";
-            input.placeholder = e.target.value;
-            return;
-        }
-      });
-    </script>
   </body>
 </html>
