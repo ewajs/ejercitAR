@@ -513,6 +513,11 @@
     margin-right: 10px;
 }
 
+.btn.btn-inverted {
+    color: #04ac9c;
+    border: 1px solid #04ac9c;
+}
+
 .navbar .btn.btn-inverted {
     border: 1px solid white;
     color: white;
@@ -523,9 +528,10 @@
     color: white;
 }
 
-.btn.btn-full.generate {
+.btn.btn-lg {
     font-size: 32px;
-    padding: 10px 50px;
+    width: 70%;
+    max-width: 330px;
     border-radius: 15px;
 }
 
@@ -613,6 +619,9 @@
 }
 
 @media screen and (max-width: 450px) {
+    .btn.btn-lg {
+        font-size: 28px;
+    }
     /* Ugly override for small screens so that repetitions and series wrap */
     .panel > .row.reps > .col-7 {
         width: 100%;
