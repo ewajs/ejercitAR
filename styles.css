@@ -518,19 +518,32 @@
     color: white;
 }
 
+.btn.btn-full {
+    background-color: #04ac9c;
+    color: white;
+}
+
+.btn.btn-full.generate {
+    font-size: 32px;
+    padding: 10px 50px;
+    border-radius: 15px;
+}
+
 .content.container {
     height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .row .panel-container {
-    margin-top: 5vh;
-    height: 60vh;
+    max-height: 55vh;
 }
 
 .row .panel-container > .panel {
     margin: 10px;
     border: 1px solid black;
-    height: 100%;
+    height: calc(100% - 20px);
     border-radius: 15px;
     overflow-y: scroll;
 }
@@ -579,5 +592,36 @@
     color: white;
 }
 
+@media screen and (max-width: 767px) {
+    .content.container {
+        height: unset;
+    }
 
+    .row .panel-container {
+        max-height: unset;
+    }
 
+    .row .panel-container.model-panel {
+        min-height: 30vh;
+    }
+
+    .row .panel-container > .panel.panel-fill {
+        margin-top: 20px;
+        height: unset;
+        overflow-y: unset;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* Ugly override for small screens so that repetitions and series wrap */
+    .panel > .row.reps > .col-7 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .panel > .row.reps > .col-1 {
+        display: none !important;
+    }
+    .panel > .row.reps > .col-4 {
+        width: 100%;
+    }
+}

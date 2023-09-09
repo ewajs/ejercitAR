@@ -49,9 +49,9 @@
         </div>
       </div>
     </nav>
-    <div class="content container d-flex">
-      <div class="row flex-fill">
-        <div class="col-5 panel-container">
+    <div class="content container">
+      <div class="row my-3">
+        <div class="col-md-5 panel-container model-panel">
           <div class="panel">
             <model-viewer
               src="./models/peso_muerto_rumano.glb"
@@ -61,17 +61,14 @@
               shadow-intensity="1"
               camera-controls
             >
-              <button slot="ar-button" class="ar-button">
-                <span class="material-symbols-outlined">view_in_ar</span>
-              </button>
             </model-viewer>
           </div>
         </div>
-        <div class="col-7 panel-container">
+        <div class="col-md-7 panel-container">
           <div class="panel panel-fill">
-            <div class="row mb-3 align-items-center">
+            <div class="row mb-3 align-items-center reps">
                 <div class="col-7"><input type="number" class="form-control" min="1" step="1" placeholder="Repeticiones"></div>
-                <div class="col-1 justify-content-center"><span class="material-symbols-outlined" style="vertical-align: middle;">close</span></div>
+                <div class="col-1 d-flex justify-content-center"><span class="material-symbols-outlined" style="vertical-align: middle;">close</span></div>
                 <div class="col-4"><input type="number" class="form-control" min="1" step="1" placeholder="Series"></div>
             </div>
             <div class="row mb-3">
@@ -110,6 +107,9 @@
             </div>
           </div>   
         </div>
+      </div>
+      <div class="row mt-3 justify-content-end">
+        <div class="col-md-7 d-flex justify-content-center"><button class="btn btn-lg btn-full generate">Generar Link</button></div>
       </div>
     </div>
 
