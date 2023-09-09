@@ -226,6 +226,8 @@ function setUpComponents(exercise, timerConfig) {
         (params.has('nr') ? `<br/>Repeticiones: ${params.get('nr')}` : '')+
         (params.has('ns') ? `<br/>Series: ${params.get('ns')}` : '') + 
         (params.has('w') ? `<br/>Peso: ${params.get('w')} kg` : '') +
+        (params.has('rir') ? `<br/>RIR: ${params.get('rir')}` : '') +
+        (params.has('rpe') ? `<br/>RPE: ${params.get('rpe')}` : '') +
         '</p>';
 
     timerInfo.addEventListener('click', () => {
@@ -234,7 +236,6 @@ function setUpComponents(exercise, timerConfig) {
         phaseEnd = new Audio('./audio/phase_end.mp3');
         repetitionEnd = new Audio('./audio/repetition_end.mp3');
         seriesEnd = new Audio('./audio/series_end.mp3');
-        const swalParams = 
         Swal.fire({
             title: 'Tiempos y Repeticiones',
             html: timerInfoHTML,
