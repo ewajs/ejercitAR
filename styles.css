@@ -547,6 +547,7 @@
 }
 
 .row .panel-container > .panel {
+    background-color: white;
     margin: 10px;
     border: 1px solid black;
     height: calc(100% - 20px);
@@ -599,6 +600,18 @@
 }
 
 @media screen and (max-width: 767px) {
+    .navbar::after {
+        content: "";
+        display: block;
+        background-color: #04ac9c;
+        width: 100%;
+        height: 120px;
+        position: fixed;
+        top: 50px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        z-index: -1;
+    }
     .content.container {
         height: unset;
     }
