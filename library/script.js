@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         listContainer.querySelectorAll('button').forEach(btn => {
             const exercise = exercises[btn.dataset.exercise];
             if (!exercise) return;
-            btn.addEventListener('click', () => window.open(`${window.location.origin}/configure.html?ex_id=${btn.dataset.exercise}`));
+            btn.addEventListener('click', () => window.open(`${getOrigin()}/configure.html?ex_id=${btn.dataset.exercise}`));
         });
         // Show the list screen & lift the splash screen
         splash.classList.remove('open');
@@ -242,3 +242,8 @@ document.addEventListener('DOMContentLoaded', () => {
         modelPageContent.classList.remove('no-embed');
     }
 });
+
+
+function getOrigin() {
+    return window.location.origin.includes('github') ? `${window.location.origin}/ejercitAR` : window.location.origin;
+}

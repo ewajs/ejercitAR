@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'Ejercicio Configurado!',
             `<div class="share-container">
                 <p class="share-text">${shareTextContent}</p>
-                <div class="share-link"><a href="#">${window.location.origin}/?${urlParams.toString()}</a><i class="bi bi-clipboard"></i></div>
+                <div class="share-link"><a href="#">${getOrigin()}/?${urlParams.toString()}</a><i class="bi bi-clipboard"></i></div>
                 <div id="qr-code"></div>
             </div>`,
             'share-modal'
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const shareText = document.querySelector('.share-text');
     
         shareLink.addEventListener('click', () => {
-            navigator.clipboard.writeText(`${window.location.origin}/?${urlParams.toString()}`);
+            navigator.clipboard.writeText(`${getOrigin()}/?${urlParams.toString()}`);
             const bi = shareLink.querySelector('.bi');
             bi.classList.remove('bi-clipboard');
             bi.classList.add('bi-clipboard-check');
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     
         new QRCode(document.getElementById('qr-code'), {
-            text: `${window.location.origin}/?${urlParams.toString()}`,
+            text: `${getOrigin()}/?${urlParams.toString()}`,
             width: 256,
             height: 256,
             colorDark: "#04ac9c",
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Preview Buttons 
     document.querySelectorAll('.btn.preview').forEach(e => 
-        e.addEventListener('click', () => window.open(`${window.location.origin}/?${getQueryParams().toString()}`, "_blank")));
+        e.addEventListener('click', () => window.open(`${getOrigin()}/?${getQueryParams().toString()}`, "_blank")));
 
     // Arrow Back Button 
     document.querySelector('.navbar-brand > .material-symbols-outlined').addEventListener('click', () => window.close());
@@ -126,4 +126,8 @@ function launchModal(title, html, container) {
         confirmButtonText: 'OK!',
         customClass: {container, title: 'cy-swal2-title', confirmButton: 'cy-swal2-confirm'},
     })
+}
+
+function getOrigin() {
+    return window.location.origin.includes('github') ? `${window.location.origin}/ejercitAR` : window.location.origin;
 }
