@@ -667,6 +667,9 @@
 
 .swal2-container.share-modal > .swal2-modal .share-container .share-link > a {
     color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .swal2-container.share-modal > .swal2-modal .share-container .share-link > .bi {
