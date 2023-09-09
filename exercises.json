@@ -550,146 +550,560 @@
         {
           "id": 17,
           "name": "Banco inclinado con barra",
-          "video_url": null,
+          "video_url": "https:www.youtube.com/shorts/TL5dcsDYbLs" ,
           "model_url": "./models/banco_inclinado_barra.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Con el banco inclinado unos 45 grados bajar la barra hasta que toque la parte superior del pectoral",
+          "tips": [
+            {
+              "name": "Banco con 45 grados de inclinación",
+              "coordinates": "2 0 717 660 658 0.331 0.483 0.185"
+            },
+            {
+              "name": "Manos más ancho que los hombros",
+              "coordinates": "0 0 4734 4736 7212 0.405 0.377 0.218"
+            },
+            {
+              "name": "La barra baja por arriba de la linea de los pezones",
+              "coordinates": "0 0 10985 10986 10984 0.806 0.103 0.091"
+            },
+            {
+              "name": "Levantar con velocidad la barra",
+              "coordinates": "1 4 866 864 868 0.019 0.352 0.629"
+            }
+          ]
         },
         {
           "id": 18,
           "name": "Banco inclinado con mancuerna",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/watch?v=Fv5EYoJfRt4",
           "model_url": "./models/banco_inclinado_mancuernas.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Con el banco inclinado unos 45 grados bajar las mancuernas por al lado del cuerpo con los codos en diagonal al cuerpo.",
+          "tips": [
+            {
+              "name": "Banco con 45 grados de inclinación",
+              "coordinates": "3 0 1819 2280 2282 0.797 0.089 0.114"
+            },
+            {
+              "name": "Bajar las mancuernas por el costado del cuerpo",
+              "coordinates": "0 0 9463 9467 9466 0.327 0.018 0.655"
+            },
+            {
+              "name": "Codos al costado del cuerpo",
+              "coordinates": "0 0 12731 12733 12690 0.267 0.104 0.629"
+            }
+          ]
         },
         {
           "id": 19,
           "name": "Press militar sentado con mancuernas",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/watch?v=HzIiNhHhhtA",
           "model_url": "./models/press_militar_sentado_mancuernas.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Siempre prestar atencion al control de las mancuernas, el banco debe estar recto y firme.",
+          "tips": [
+            {
+              "name": "Banco recto",
+              "coordinates": "3 0 717 660 658 0.306 0.128 0.566"
+            },
+            {
+              "name": "Bajar las mancuernas por el costado del cuerpo",
+              "coordinates": "2 0 1368 1371 1369 0.398 0.599 0.004"
+            },
+            {
+              "name": "Codos alineados con codos y en diagonal al cuerpo",
+              "coordinates": "0 0 9473 9475 9474 0.154 0.281 0.565"
+            }
+          ]
         },
         {
           "id": 20,
           "name": "Jalones con agarre prono ancho",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/watch?v=jYMUQRlYBos",
           "model_url": "./models/jalones_agarre_prono_ancho.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "El cuerpo debe estar firme. Prestar atencion a no mover el cuerpo. El trabajo es ideal para el dorsal.",
+          "tips": [
+            {
+              "name": "Agarre más ancho que los hombros",
+              "coordinates": "2 0 5 118 136 0.469 0.153 0.377"
+            },
+            {
+              "name": "Bajar la barra hasta la parte superior del pectoral",
+              "coordinates": "0 0 11996 11997 11993 0.135 0.691 0.174"
+            },
+            {
+              "name": "Subir controlado",
+              "coordinates": "0 0 4461 4418 4419 0.470 0.140 0.390"
+            },
+            {
+              "name": "Evitar mover el cuerpo",
+              "coordinates": "0 0 2746 1467 2748 0.412 0.574 0.014"
+            }
+          ]
         },
         {
           "id": 21,
           "name": "Curl de cuadriceps en máquina",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/shorts/Xp0lgnV0th0",
           "model_url": "./models/curl_cuadriceps_maquina.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Ejercicio para aislar los cuadriceps, es decir la parte anterior de las piernas.",
+          "tips": [
+            {
+              "name": "Poner la espalda muy derecha",
+              "coordinates": "0 0 11683 9066 9065 0.550 0.124 0.326"
+            },
+            {
+              "name": "La parte inferior de la maquina debe estar justo a la altura de los tobillos",
+              "coordinates": "0 0 9991 8690 8683 0.110 0.499 0.391"
+            },
+            {
+              "name": "Rodillas y pies alineados",
+              "coordinates": "0 0 3221 2985 2986 0.217 0.264 0.519"
+            },
+            {
+              "name": "Subir y bajar todo lo que la máquina permite",
+              "coordinates": "0 0 10626 10627 10479 0.191 0.237 0.573"
+            },
+            {
+              "name": "Controlar el movimiento",
+              "coordinates": "0 0 10655 10393 10396 0.255 0.114 0.631"
+            }
+          ]
         },
         {
           "id": 22,
           "name": "Curl femoral en máquina acostado",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/shorts/i5Kvc8ie6EI",
           "model_url": "./models/curl_femoral_maquina_acostado.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Ejercicio para aislar el femoral, parte posterior de la pierna justo por debajo del gluteo.",
+          "tips": [
+            {
+              "name": "Pecho bien apoyado en la maquina",
+              "coordinates": "0 0 10958 10959 10961 0.646 0.280 0.074"
+            },
+            {
+              "name": "La parte posterior de la maquina debe quedar a la altura de los tobillos",
+              "coordinates": "1 1 369 379 398 0.547 0.322 0.131"
+            },
+            {
+              "name": "Hacer todo el recorrido posible de la maquina",
+              "coordinates": "1 0 3 216 227 0.012 0.287 0.700"
+            },
+            {
+              "name": "Controlar el movimiento",
+              "coordinates": "0 0 2169 2172 2171 0.683 0.212 0.105"
+            }
+          ]
         },
         {
           "id": 23,
           "name": "Plancha dinámica en trx",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/watch?v=YhSYU0zN3fU",
           "model_url": "./models/plancha_dinamica_trx.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Ejercicio avanzado para la capa abdominal. En este caso la plancha se realiza en un suspensor o TRX.",
+          "tips": [
+            {
+              "name": "Poner el cuerpo en posicion de plancha con los pies en el TRX",
+              "coordinates": "0 0 2838 2836 2840 0.381 0.597 0.021"
+            },
+            {
+              "name": "Elevar la cadera exageradamente y meter la cabeza entre los codos",
+              "coordinates": "0 0 11478 11482 11480 0.009 0.322 0.669"
+            },
+            {
+              "name": "No dejar que la cadera supera la linea de los pies en la bajada",
+              "coordinates": "0 0 8934 8240 8241 0.692 0.272 0.035"
+            },
+            {
+              "name": "Repetir muy controladamente",
+              "coordinates": "0 0 2472 2474 1753 0.311 0.574 0.115"
+            }
+          ]
         },
         {
           "id": 24,
           "name": "Flexiones de brazos con las rodillas apoyadas",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/watch?v=4_xbj4nvCz0",
           "model_url": "./models/flexiones_brazos_ rodillas_apoyadas.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Perfecta regresión de las push ups. También es un buen trabajo de pectoral.",
+          "tips": [
+            {
+              "name": "Apoyar rodillas y cruzar pies",
+              "coordinates": "0 0 2079 868 869 0.093 0.004 0.9029"
+            },
+            {
+              "name": "Manos más ancho que los hombros",
+              "coordinates": "0 0 5829 5805 5802 0.326 0.122 0.552"
+            },
+            {
+              "name": "Bajar de manera coordinada el pecho y la cadera hasta estar muy cerca del piso",
+              "coordinates": "0 0 3754 3750 3757 0.258 0.573 0.169"
+            },
+            {
+              "name": "Empujar con velocidad",
+              "coordinates": "0 0 12374 12372 12376 0.149 0.473 0.377"
+            }
+          ]
         },
         {
           "id": 25,
           "name": "Press frances con mancuerna",
-          "video_url": null,
+          "video_url": " https://www.youtube.com/watch?v=CHyjj0frj54",
           "model_url": "./models/press_frances_mancuerna.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Buena variante para el tríceps. Ten cuidado con la cara, hacer el movimiento muy controlado.",
+          "tips": [
+            {
+              "name": "Ponerse boca arriba con las manos por arriba del pecho",
+              "coordinates": "0 0 10976 9435 9439 0.029 0.870 0.101"
+            },
+            {
+              "name": "Luego colocar los brazos un poco inclinado en dirección a la cabeza",
+              "coordinates": "3 0 663 718 698 0.161 0.557 0.282"
+            },
+
+            {
+              "name": "Desde ahi bajar las mancuernas hasta la altura de la cabeza",
+              "coordinates": "1 0 231 228 229 0.035 0.485 0.480"
+            },
+            {
+              "name": "Subir las manos sin cambiar la posición de los brazos",
+              "coordinates": "1 0 1871 1868 1870 0.231 0.017 0.751"
+            }
+          ]
         },
         {
           "id": 26,
           "name": "Subidas al cajon con mancuernas",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/watch?v=QxZzLH4UwvY",
           "model_url": "./models/subidas_cajon_mancuernas.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
-        },
-        {
-          "id": 27,
-          "name": "Subidas al cajon con mancuernas",
-          "video_url": null,
-          "model_url": "./models/subidas_cajon_mancuernas.glb",
-          "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Trabajo completo de pierna y exelente opcion para tus gluteos.",
+          "tips": [
+            {
+              "name": "Subir empujando solo con la pierna que esta sobre el cajón",
+              "coordinates": "0 0 1569 1574 1573 0.006 0.752 0.242"
+            },
+            {
+              "name": "Bajar controlando lo más posible la bajada sin aflojar la tensión",
+              "coordinates": "0 0 10664 10366 10368 0.215 0.279 0.506"
+            },
+            {
+              "name": "Espalda muy derecha",
+              "coordinates": "0 0 9049 9051 1016 0.410 0.538 0.052"
+            }
+
+          ]
         },
         {
           "id": 28,
           "name": "Remo en maquina agarre neutro",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/watch?v=KApqM47qYBM",
           "model_url": "./models/remo_maquina_agarre_neutro.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Trabajo de dorsales. Este caso la maquina te va a permitir meter muchos kilos.",
+          "tips": [
+            {
+              "name": "Espalda derecha",
+              "coordinates": "0 0 7063 9053 9055 0.252 0.464 0.284"
+            },
+            {
+              "name": "Hacer una extencion de omoplatos cuando vas para adelante y una retraccion cuando remas",
+              "coordinates": "0 0 11918 11919 11722 0.573 0.408 0.019"
+            },
+            {
+              "name": "Mentón arriba",
+              "coordinates": "0 0 3908 3910 3909 0.071 0.677 0.251"
+            }
+          ]
         },
         {
           "id": 29,
           "name": "Bicho muerto",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/watch?v=qHIwmQVa3Kc",
           "model_url": "./models/bicho_muerto.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Trabajo de anti exentencion. Perfecto para la zona media",
+          "tips": [
+            {
+              "name": "Recorda hacerlo lento y controlado para coordinar manos con pies",
+              "coordinates": "0 0 4070 4072 4071 0.583 0.367 0.051"
+            },
+            {
+              "name": "Panza apretando el piso",
+              "coordinates": "0 0 11641 11643 11642 0.060 0.393 0.548"
+            }
+          ]
         },
         {
           "id": 30,
           "name": "Crunch abdominal",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/shorts/U2Pxw_PLfXc",
           "model_url": "./models/crunch_abdominal.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Asegúrate de hacer una tecnica correcta. Trabajo para la zona media que debe realizarse con cuidado ",
+          "tips": [
+            {
+              "name": "Contraer bien la zona media",
+              "coordinates": "0 0 3384 229 230 0.602 0.328 0.071"
+            },
+            {
+              "name": "No hacer fuerza con el cuello",
+              "coordinates": "0 0 3525 7358 7359 0.104 0.453 0.443"
+            }
+          ]
         },
         {
           "id": 31,
           "name": "Rueda abdominal",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/shorts/phaHk_VyCno",
           "model_url": "./models/rueda_abdominal.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": " Unos de los mejores ejercicios de zona media. Recorda trabajar bien los abs antes de comenzar",
+          "tips": [
+            {
+              "name": "Espalda curva, como metiendo panza",
+              "coordinates": "0 0 3720 3722 3721 0.097 0.559 0.344"
+            },
+
+            {
+              "name": "Ir para adelante con todo el cuerpo",
+              "coordinates": "1 1 654 403 416 0.758 0.237 0.005"
+            },
+            {
+              "name": "Sostener la cadera arriba sin quebrarla",
+              "coordinates": "0 0 11053 11059 11058 0.096 0.249 0.655"
+            },
+            {
+              "name": "Volver hasta la mitad del recorrido",
+              "coordinates": "0 0 11929 11931 7998 0.313 0.672 0.015"
+            }
+          ]
         },
         {
           "id": 32,
           "name": "Press de pecho con mancuernas",
-          "video_url": null,
+          "video_url": "https://www.youtube.com/watch?v=LHSKJversOo",
           "model_url": "./models/press_pecho_mancuernas.glb",
           "orbit": "0deg 90deg 4m",
-          "description": "bla",
-          "tips": []
+          "description": "Buena variante para progresar tus pectorales. Requiere de un buen control y tiene transferencia al press de banca",
+          "tips": [
+            {
+              "name": "Empezar boca arriba con las mancuernas alineadas con los codos",
+              "coordinates": "2 0 1288 1291 1289 0.002 0.598 0.400"
+            },
+            {
+              "name": "Los codos van e diagonal al cuerpo",
+              "coordinates": "0 0 4391 4348 4393 0.269 0.512 0.220"
+            },
+            {
+              "name": "Los pies, escapulas y gluteo bien apretados",
+              "coordinates": "0 0 2517 1873 1867 0.613 0.160 0.227"
+            },
+            {
+              "name": "Subir recto y bajar controlado",
+              "coordinates": "0 0 12295 12294 12298 0.356 0.637 0.007"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "nuevos_pej",
+      "icon": "info",
+      "exercises": [
+        {
+          "id": 33,
+          "name": "Plancha frontal",
+          "video_url": "https://www.youtube.com/shorts/1Xwdfkqgm-U",
+          "model_url": "./models/plancha_frontal.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ideal para empezar a trabajar la zona media. Se trata de ejercicio anti flexión, es decir la zona media tiene que evitar la flexion",
+          "tips": [
+            {
+              "name": "Apoyo antebrazos y punta de los pies",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Los codos y los hombros deben estar alineados",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Meter panza y retraer gluteos",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "name": "Extensión de Gluteos con máquina",
+          "video_url": "https://www.youtube.com/shorts/vFkYWgoDh5g",
+          "model_url": "./models/extension_gluteos.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ejercicio para el gluteo, no para los lumbares. Es esencial para el desarrollo del gluteo. Prestar mucha atención a la tecnica",
+          "tips": [
+            {
+              "name": "Evitar el dolor lumbar",
+              "coordinates": "0 0 10916 9539 9540 0.053 0.260 0.687"
+            },
+            {
+              "name": "Poner los cuadriceps en el borde superior de la maquina",
+              "coordinates": "0 0 10659 9647 9648 0.013 0.486 0.500"
+            },
+            {
+              "name": "Extender omoplatos, es decir espalda curva",
+              "coordinates": "0 0 11717 9103 9104 0.149 0.595 0.256"
+            },
+            {
+              "name": "Pera pegada al menton",
+              "coordinates": "0 0 3535 80 1342 0.183 0.617 0.200"
+            },
+            {
+              "name": "Hacer el recorrido completo",
+              "coordinates": "0 0 3398 7508 7507 0.114 0.510 0.376"
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "name": "Fondos en paralelas",
+          "video_url": "https://www.youtube.com/shorts/icbVR_BsSI8",
+          "model_url": "./models/fondos_paralelas.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ideal para triceps y para pectoral inferior. Exelente ejercicio para trasferir al bech press",
+          "tips": [
+            {
+              "name": "Alinear codo con mano",
+              "coordinates": "2 0 14132 14094 14106 0.121 0.527 0.352"
+            },
+            {
+              "name": "Bajar mínimo hasta que el codo esté alineado con el hombro",
+              "coordinates": "2 0 12377 12378 12317 0.347 0.507 0.147"
+            },
+            {
+              "name": "Subir con buena velocidad",
+              "coordinates": "2 0 9468 9471 9473 0.239 0.235 0.526"
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "name": "Estocadas con mancuernas",
+          "video_url": "https://www.youtube.com/shorts/U-HpvQRekuQ",
+          "model_url": "./models/estocada_mancuerna.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ejercicio predominante de rodilla con un buen trabajo gluteo. Tambien va a ayudar mucho a mejorar tu core",
+          "tips": [
+            {
+              "name": "Espalda derecha con omoplatos retraidos",
+              "coordinates": "0 0 11673 11675 9057 0.027 0.101 0.872"
+            },
+            {
+              "name": "Menton arriba",
+              "coordinates": "0 0 13008 8116 8114 0.070 0.060 0.870"
+            },
+            {
+              "name": "Hacemos pasos grandes sin tocar el piso con la pierna que se adelanta",
+              "coordinates": "0 0 11167 11170 11169 0.684 0.124 0.192"
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "name": "Caminata de Granjero con peso",
+          "video_url": "https://www.youtube.com/shorts/kpsVTjS6kMw",
+          "model_url": "./models/farmer_walk .glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Un ejercicio de alta demanda de la zona media. Solo vas a sentir los abs si lo trabajas bien pesado.",
+          "tips": [
+            {
+              "name": "Sacar pecho y poner la espalda bien derecha",
+              "coordinates": "0 0 7049 7083 216 0.252 0.330 0.418"
+            },
+            {
+              "name": "Retener el aire",
+              "coordinates": "0 0 3312 3301 3302 0.097 0.484 0.418"
+            },
+            {
+              "name": "Mirada al frente y mentón arriba",
+              "coordinates": "0 0 9326 9321 9312 0.071 0.182 0.747"
+            },
+            {
+              "name": "Dar pasos lo más naturales posibles",
+              "coordinates": "0 0 9779 9781 9780 0.290 0.085 0.625"
+            },
+            {
+              "name": "Levantar y dejar las pesas con la espalda derecha",
+              "coordinates": "1 0 1907 1906 1908 0.244 0.419 0.337"
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "name": "Apertura de pecho con mancuernas",
+          "video_url": "https://www.youtube.com/shorts/OWsPTRX7GK0",
+          "model_url": "./models/apertura_de_pecho.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "El aislamiento de pectoral es algo esencial en el desarollo de la masa muscular en este musculo.",
+          "tips": [
+            {
+              "name": "Brazos levemente flexionados",
+              "coordinates": "1 0 133 135 132 0.678 0.299 0.023"
+            },
+            {
+              "name": "Escápulas y glúteos apretados",
+              "coordinates": "1 0 133 134 135 0.256 0.227 0.517"
+            },
+            {
+              "name": "Bajo las mancuernas sin cambiar la flexión del codo hasta sobrepasar la linea del cuerpo",
+              "coordinates": "3 0 1930 1929 1931 0.556 0.187 0.256"
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "name": "Peso muerto rumano con pesas",
+          "video_url": "https://www.youtube.com/u1qzWswatch?v=IlOrG",
+          "model_url": "./models/romanian_deadlift.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ejercicio clave para el glúteo medio y los isquiotibiales. Requiere de alto control.",
+          "tips": [
+            {
+              "name": "Todo lento y controlado",
+              "coordinates": "0 0 2689 1566 1560 0.194 0.347 0.459"
+            },
+            {
+              "name": "Retraer escápulas",
+              "coordinates": "0 0 11705 11707 9081 0.219 0.362 0.419"
+            },  
+            {
+              "name": "Bajar pecho con las espalda derecha al mismo tiempo que la pierna se levanta",
+              "coordinates": "0 0 2808 1361 1362 0.729 0.197 0.074"
+            },
+             {
+              "name": "Mantener pierna estirada",
+              "coordinates": "0 0 8339 8340 8336 0.545 0.377 0.078"
+            },
+            {
+              "name": "Mancuernas pegadas a la pierna en todo momento",
+              "coordinates": "0 0 12835 12838 12837 0.250 0.504 0.246"
+            }
+          ]
         }
       ]
     }
