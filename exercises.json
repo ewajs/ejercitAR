@@ -1106,6 +1106,373 @@
           ]
         }
       ]
+    },
+    {
+      "id": 11,
+      "name": "nuevos_movilidad",
+      "icon": "info",
+      "exercises": [
+        {
+          "id": 40,
+          "name": "Gato contento gato enojado",
+          "video_url": "",
+          "model_url": "./models/23. Gato contento gato enojado.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ejercicio clave para la movilidad de la columna",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "name": "Dorsiflexión de tobillo",
+          "video_url": "",
+          "model_url": "./models/23b. Dorsiflexión de tobillo.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ejercicio para mejorar la movilidad de tu tobillo",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "name": "Movilidad de cadera",
+          "video_url": "",
+          "model_url": "./models/24. Movilidad de cadera.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ejercicio para mejorar tu movilidad de cadera",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "name": "Movilidad torácica en cuatro patas con mano en la nuca",
+          "video_url": "",
+          "model_url": "./models/29. Movilidad torácica en cuatro patas con mano en la nuca.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ejercicio para mejorar la movilidad torácica.",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 44,
+          "name": "Rotación lumbar",
+          "video_url": "",
+          "model_url": "./models/30. Rotación lumbar L.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ideal para darle movilidad a la zona lumbar.",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 45,
+          "name": "Open book",
+          "video_url": "",
+          "model_url": "./models/31. Open book.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Buen ejercicio para la movilidad de hombro.",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 46,
+          "name": "Rotación torácica en sentadilla profunda",
+          "video_url": "",
+          "model_url": "./models/32. Rotación torácica en sentadilla profunda.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Buen ejercicio para entrenar en calor antes de una sentadilla y mejorar la movilidad torácica.",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 47,
+          "name": "Rotación externa de hombro con una banda a dos manos",
+          "video_url": "",
+          "model_url": "./models/33. Rotación externa de hombro con una banda a dos manos.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Buen ejercicio para trabajar los rotadores.",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "name": "IYTW",
+          "video_url": "",
+          "model_url": "./models/34. IYTW.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ejercicio para mejorar la parte posterior de los deltoides.",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "name": "Movilidad de cadera con banda",
+          "video_url": "",
+          "model_url": "./models/35. Movilidad de cadera con banda.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Buen ejercicio para mejorar la movilidad de cadera con mínimo material.",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "name": "Movilidad torácica con foam roller",
+          "video_url": "",
+          "model_url": "./models/36. Movilidad torácica con foam roller.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Mejora la movilidad torácica y lumbar.",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "name": "Rotación con palo sentado",
+          "video_url": "",
+          "model_url": "./models/37. Rotación con palo sentado.glb",
+          "orbit": "0deg 90deg 4m",
+          "description": "Ejercicio para mejorar la movilidad torácica.",
+          "tips": [
+            {
+              "name": "Colocarse en cuatro patas",
+              "coordinates": "00 0 13 102 101 0.762 0.128 0.110"
+            },
+            {
+              "name": "Meter panza y sacar panza",
+              "coordinates": "0 0 3891 3890 7163 0.826 0.098 0.076"
+            },
+            {
+              "name": "Acompañar el movimiento con el cuello",
+              "coordinates": "0 0 11560 11561 11559 0.182 0.691 0.128"
+            },
+            {
+              "name": "Sostener el cuerpo alineando cadera con hombros",
+              "coordinates": "0 0 15601 15600 9553 0.533 0.096 0.370"
+            },
+            {
+              "name": "Respirar lentamente",
+              "coordinates": "0 0 7070 9095 9097 0.416 0.367 0.217"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
